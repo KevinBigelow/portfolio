@@ -1,29 +1,16 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app" class="app-layout">
+    <nav class="navbar-side">
+      <h2 class="has-text-primary is-size-3 has-text-centered">Designer & Developer</h2>
+      <h1 class="title is-size-1 has-text-centered">Kevin Bigelow</h1>
+    </nav>
+    <article class="app-content">
+      <router-view/>
+    </article>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+  @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,900&display=swap');
+  @import "/styles/main.scss";
 </style>

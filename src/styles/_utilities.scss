@@ -1,0 +1,15 @@
+
+/* Flex
+---------------------------------------------------- */
+
+.flex {
+    @include flex(row);
+}
+
+.flex--row {
+    @include flex(row);
+}
+
+.flex--column {
+    @include flex(column);
+}

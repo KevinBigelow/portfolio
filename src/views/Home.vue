@@ -1,7 +1,29 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="columns">
+      <div class="column is-one-third has-background-primary">
+        First column
+      </div>
+      <div class="column is-two-thirds has-background-success">
+        Second column
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-two-thirds has-background-danger">
+        Third column
+      </div>
+      <div class="column is-one-third has-background-warning">
+        Fourth column
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-third has-background-warning">
+        Fifth column
+      </div>
+      <div class="column is-two-thirds has-background-primary">
+        Sixth column
+      </div>
+    </div>
   </div>
 </template>
 
