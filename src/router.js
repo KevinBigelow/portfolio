@@ -14,6 +14,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/neutron-wing-sticker',
+      name: 'neutron-wing-sticker',
+      component: () => import('./views/specimens/NeutronWingSticker.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
