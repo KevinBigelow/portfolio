@@ -14,9 +14,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/neutron-wing-sticker',
-      name: 'neutron-wing-sticker',
-      component: () => import('./views/specimens/NeutronWingSticker.vue')
+      path: '/:specimen_id',
+      name: 'specimen',
+      component: () => import('./views/Specimen.vue')
     },
     {
       path: '/about',

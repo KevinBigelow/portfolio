@@ -10,4 +10,14 @@
     </div>
   </div>
 </template>
-X
+
+<script>
+  export default {
+    name: 'specimen',
+    data () {
+      return {
+
+      }
+    }
+  }
+</script>

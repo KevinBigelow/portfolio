@@ -1,40 +1,45 @@
 <template>
   <div class="home">
-    <div class="columns">
-      <div class="column is-one-third has-background-primary">
-        First column
-      </div>
-      <div class="column is-two-thirds has-background-success">
-        Second column
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column is-two-thirds has-background-danger">
-        Third column
-      </div>
-      <div class="column is-one-third has-background-warning">
-        Fourth column
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column is-one-third has-background-warning">
-        Fifth column
-      </div>
-      <div class="column is-two-thirds has-background-primary">
-        Sixth column
-      </div>
-    </div>
+    <ul>
+      <li v-for="specimen in specimens" :key="specimen.id">
+        <router-link :to="{name: 'specimen', params: {specimen_id: specimen.specimen_id}}">
+          <img :src="require(`@/assets/${specimen.featured_image}`)">
+          {{ specimen.name }}
+        </router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+  import db from '../components/firebaseInit'
 export default {
   name: 'home',
-  components: {
-    HelloWorld
+  data() {
+    return {
+      specimens: []
+    }
+  },
+  methods: {
+    getSpecimens() {
+      db.collection('specimens').get().then(
+      querySnapshot => {
+        querySnapshot.forEach(doc => {
+          const data = {
+            'id': doc.id,
+            'specimen_id': doc.data().specimen_id,
+            'name': doc.data().name,
+            'description': doc.data().description,
+            'featured_image': doc.data().featured_image,
+            'categories': doc.data().categories,
+          }
+          this.specimens.push(data)
+        })
+      })
+    }
+  },
+  created() {
+    this.getSpecimens();
   }
 }
 </script>
