@@ -12,34 +12,18 @@
 </template>
 
 <script>
-  import db from '../components/firebaseInit'
-export default {
-  name: 'home',
-  data() {
-    return {
-      specimens: []
+  import { db } from '../main'
+  export default {
+    name: 'home',
+    data() {
+      return {
+        specimens: []
+      }
+    },
+    firestore () {
+      return {
+        specimens: db.collection('specimens')
+      }
     }
-  },
-  methods: {
-    getSpecimens() {
-      db.collection('specimens').get().then(
-      querySnapshot => {
-        querySnapshot.forEach(doc => {
-          const data = {
-            'id': doc.id,
-            'specimen_id': doc.data().specimen_id,
-            'name': doc.data().name,
-            'description': doc.data().description,
-            'featured_image': doc.data().featured_image,
-            'categories': doc.data().categories,
-          }
-          this.specimens.push(data)
-        })
-      })
-    }
-  },
-  created() {
-    this.getSpecimens();
   }
-}
 </script>

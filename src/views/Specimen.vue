@@ -1,54 +1,35 @@
 <template>
-  <div class="specimen">
+  <div class="specimen" v-if="specimen_id !== null">
     <h1>{{ name }}</h1>
     <h2 class="has-text-primary"><span v-for="(category, index) in categories" :key="index">{{ category }}</span></h2>
     <p>{{ description }}</p>
     <div class="panel">
-      <img :src="require(`@/assets/${featured_image}`)">
-      <figure v-for="m in media" :key="m.src" class="">
-        <img :src="require(`@/assets/${m.src}`)" :alt="m.alt">
-      </figure>
+      <img :src="require(`@/assets/${featured_image}`)" v-if="featured_image !== null">
+<!--      <figure v-for="m in specimen[0].media" :key="m.src" class="">-->
+<!--        <img :src="require(`@/assets/${m.src}`)" :alt="m.alt">-->
+<!--      </figure>-->
     </div>
   </div>
 </template>
 
 <script>
-  import db from '../components/firebaseInit'
+  import { db } from '../main'
   export default {
     name: 'specimen',
     data () {
       return {
-        specimen_id: null,
         name: null,
-        categories: null,
         description: null,
-        media: null,
         featured_image: null,
+        categories: null,
+        media: null,
+        specimen_id: null
       }
     },
-    beforeRouteEnter (to, from, next) {
-      db.collection('specimens').where('specimen_id', '==',
-          to.params.specimen_id).get()
-          .then(querySnapshot => {
-            querySnapshot.forEach(doc => {
-              next(vm => {
-                vm.specimen_id = doc.data().specimen_id;
-                vm.name = doc.data().name;
-                vm.categories = doc.data().categories;
-                vm.description = doc.data().description;
-                vm.media = doc.data().media;
-                vm.featured_image = doc.data().featured_image;
-              })
-            })
-      })
-    },
-    watch: {
-      '$route': 'fetchData'
-    },
-    methods: {
-      fetchData () {
-        db.collection('specimens').where('specimen_id', '==',
-          this.$route.params.specimen_id).get()
+    firestore () {
+      return {
+        // specimen: db.collection('specimens').where('specimen_id', '==', parseInt(this.$route.params.specimen_id))
+        specimen: db.collection('specimens').where('specimen_id', '==', parseInt(this.$route.params.specimen_id)).get()
             .then(querySnapshot => {
               querySnapshot.forEach(doc => {
                 this.specimen_id = doc.data().specimen_id;
