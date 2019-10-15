@@ -1,29 +1,33 @@
 <template>
-  <div class="home">
-    <ul>
-      <li v-for="specimen in specimens" :key="specimen.id">
-        <router-link :to="{name: 'specimen', params: {specimen_id: specimen.specimen_id}}">
-          <img :src="require(`@/assets/${specimen.featured_image}`)">
-          {{ specimen.name }}
-        </router-link>
-      </li>
-    </ul>
+  <div class="home tile is-ancestor is-vertical">
+    <div v-for="specimen in portfolio" :key="specimen.slug" class="tile is-6">
+      <router-link :to="{name: 'specimen', params: {slug: specimen.slug}}">
+        <img :src="require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`)">
+        {{ specimen.name }}
+      </router-link>
+    </div>
   </div>
 </template>
 
 <script>
-  import { db } from '../main'
+  import axios from 'axios'
   export default {
-    name: 'home',
+    name: 'specimen',
     data() {
       return {
-        specimens: []
+        baseUrl: process.env.VUE_APP_BASE_URL,
+        portfolio: null
       }
     },
-    firestore () {
-      return {
-        specimens: db.collection('specimens')
+    methods: {
+      fetchData() {
+        axios.get(this.baseUrl + 'portfolio.json').then(response => {
+          this.portfolio = response.data;
+        })
       }
-    }
+    },
+    created() {
+      this.fetchData();
+    },
   }
 </script>

@@ -1,0 +1,10 @@
+Unstaged changes after reset:
+M	package-lock.json
+M	package.json
+M	src/App.vue
+M	src/assets/neutron-wing-sticker/featured.jpg
+D	src/assets/neutron_wing_sticker/IMG_1484-sml.jpg
+M	src/main.js
+M	src/router.js
+M	src/views/Home.vue
+M	src/views/Specimen.vue

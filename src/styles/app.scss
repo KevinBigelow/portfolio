@@ -4,5 +4,17 @@
 
 .app-layout {
     display: grid;
-    grid-template-columns: 430px 1fr;
+    grid-template-columns: 440px 1fr;
+}
+
+.app-navbar {
+    background: #F7F7F7;
+    @include flex(row);
+    justify-content: center
+}
+
+.app-content {
+    height: 100vh;
+    overflow-y: scroll;
+    background: #EFEFEF;
 }

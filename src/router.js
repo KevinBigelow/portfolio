@@ -14,7 +14,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/:specimen_id',
+      path: '/:slug',
       name: 'specimen',
       component: () => import('./views/Specimen.vue')
     },
