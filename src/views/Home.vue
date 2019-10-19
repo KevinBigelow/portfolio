@@ -1,33 +1,51 @@
 <template>
-  <div class="home tile is-ancestor is-vertical">
-    <div v-for="specimen in portfolio" :key="specimen.slug" class="tile is-6">
-      <router-link :to="{name: 'specimen', params: {slug: specimen.slug}}">
-        <img :src="require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`)">
-        {{ specimen.name }}
-      </router-link>
+  <div class="home">
+    <div class="columns" v-if="portfolio">
+      <div class="column is-half">
+        <SpecimenTile :specimen="portfolio.NeutronWingSticker" :key="portfolio.NeutronWingSticker.slug"></SpecimenTile>
+        <SpecimenTile :specimen="portfolio.NeutronPromoPamphlet" :key="portfolio.NeutronPromoPamphlet.slug"></SpecimenTile>
+        <SpecimenTile :specimen="portfolio.Fusion" :key="portfolio.Fusion.slug"></SpecimenTile>
+      </div>
+      <div class="column is-half margin-top--xl">
+        <SpecimenTile :specimen="portfolio.CallCenterPortal" :key="portfolio.CallCenterPortal.slug"></SpecimenTile>
+        <SpecimenTile :specimen="portfolio.ProtonWatchlists" :key="portfolio.ProtonWatchlists.slug"></SpecimenTile>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
   import axios from 'axios'
+  import SpecimenTile from '../components/SpecimenTile'
   export default {
-    name: 'specimen',
+    name: 'portfolio',
     data() {
       return {
         baseUrl: process.env.VUE_APP_BASE_URL,
-        portfolio: null
-      }
-    },
-    methods: {
-      fetchData() {
-        axios.get(this.baseUrl + 'portfolio.json').then(response => {
-          this.portfolio = response.data;
-        })
+        portfolio: null,
+        loading: true,
+        errored: false,
       }
     },
     created() {
       this.fetchData();
+    },
+    methods: {
+      fetchData() {
+        axios
+          .get(this.baseUrl + 'portfolio.json')
+          .then(response => {
+            this.portfolio = response.data;
+          })
+          .catch(error => {
+            console.log(error);
+            this.errored = true
+          })
+          .finally(() => this.loading = false);
+      },
+    },
+    components: {
+      SpecimenTile
     },
   }
 </script>

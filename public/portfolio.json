@@ -1,6 +1,6 @@
 {
-  "neutron-wing-sticker": {
-    "slug": "neutron-wing-sticker",
+  "NeutronWingSticker": {
+    "slug": "NeutronWingSticker",
     "name": "Neutron Wing Sticker",
     "description": "lorem ipsum dolor sit amghmet",
     "featured_image": {
@@ -11,8 +11,8 @@
       "Graphic Design", "Sticker Design", "Placeholder"
     ]
   },
-  "fusion": {
-    "slug": "fusion",
+  "Fusion": {
+    "slug": "Fusion",
     "name": "Fusion",
     "description": "lorem ipsum dolor sit amghmet",
     "featured_image": {
@@ -23,8 +23,8 @@
       "Graphic Design", "Sticker Design", "Placeholder"
     ]
   },
-  "neutron-promo-pamphlet": {
-    "slug": "neutron-promo-pamphlet",
+  "NeutronPromoPamphlet": {
+    "slug": "NeutronPromoPamphlet",
     "name": "Neutron Promo Pamphlet",
     "description": "lorem ipsum dolor sit amghmet",
     "featured_image": {
@@ -35,8 +35,8 @@
       "Graphic Design", "Sticker Design", "Placeholder"
     ]
   },
-  "call-center-portal": {
-    "slug": "call-center-portal",
+  "CallCenterPortal": {
+    "slug": "CallCenterPortal",
     "name": "Call Center Portal",
     "description": "lorem ipsum dolor sit amghmet",
     "featured_image": {
@@ -47,8 +47,8 @@
       "Graphic Design", "Sticker Design", "Placeholder"
     ]
   },
-  "proton-watchlists": {
-    "slug": "proton-watchlists",
+  "ProtonWatchlists": {
+    "slug": "ProtonWatchlists",
     "name": "Proton Watchlists",
     "description": "lorem ipsum dolor sit amghmet",
     "featured_image": {
