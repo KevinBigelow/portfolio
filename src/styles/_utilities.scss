@@ -1,4 +1,14 @@
 
+
+.margin-top--xl {
+    margin-top: 5rem;
+}
+
+.padding-top--xl {
+    padding-top: 5rem;
+}
+
+
 /* Flex
 ---------------------------------------------------- */
 
@@ -12,4 +22,72 @@
 
 .flex--column {
     @include flex(column);
+}
+
+
+// Alignment and Justification
+.flex-center-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-start {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.flex-wrap {
+    flex-flow: wrap;
+}
+
+.align-items--start {
+    align-items: flex-start;
+}
+
+.align-items--end {
+    align-items: flex-end;
+}
+
+.align-items--center {
+    align-items: center;
+}
+
+.align-items--stretch {
+    align-items: stretch;
+}
+
+.justify-content--start {
+    justify-content: flex-start;
+}
+
+.justify-content--end {
+    justify-content: flex-end;
+}
+
+.justify-content--center {
+    justify-content: center;
+}
+
+.justify-content--space-between {
+    justify-content: space-between;
+}
+
+.align-self--center {
+    align-self: center;
+}
+
+.align-self--start {
+    align-self: flex-start;
+}
+
+.align-self--end {
+    align-self: flex-end;
+}
+
+.align-self--stretch {
+    align-self: stretch;
 }
