@@ -2,7 +2,7 @@
   <div>
     <span v-if="specimen">
       {{specimen.name}}
-      <img :src="require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`)">
+      <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)">
     </span>
   </div>
 </template>
@@ -26,6 +26,10 @@
           this.specimen = this.portfolio[this.$route.params.slug]
         })
       },
+      getImgSrc(dir, src) {
+          let image = dir + '/' + src;
+          return require('../assets/' + image);
+      }
     },
     created() {
       this.fetchData();
