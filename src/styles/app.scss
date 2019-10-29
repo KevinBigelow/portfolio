@@ -4,25 +4,87 @@
 
 .app-layout {
     display: grid;
-    grid-template-columns: 440px 1fr;
+    grid-template-columns: 25% 1fr;
 }
 
 .app-navbar {
     background: #F7F7F7;
-    @include flex(row);
-    justify-content: center
+    @include flex(column);
+    justify-content: space-between;
+    align-items: center;
+
+    .button {
+        max-width: 180px;
+    }
+}
+
+.app-navbar--heading {
+    padding: 27vh 1rem 1rem;
+}
+
+.app-navbar--footer {
+    padding: 1rem;
 }
 
 .app-content {
     height: 100vh;
     overflow-y: scroll;
     background: #EFEFEF;
-    padding: 80px;
+    padding: 50px 80px 80px;
 }
 
 /* Specimen Tiles
 ---------------------------------------------------- */
 
 .specimen-tile {
-    min-height: 500px;
+    min-height: 400px;
+    margin-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .button, &:after {
+        transition: opacity .25s;
+    }
+
+    &:after {
+        content: '';
+        background: $primary;
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        opacity: 1;
+    }
+
+    .button {
+        z-index: 1;
+    }
+
+    &:not(:hover) {
+        .button, &:after {
+            opacity: 0;
+        }
+    }
+}
+
+
+/* Image
+---------------------------------------------------- */
+
+.image-cover {
+    width: 100%;
+}
+
+
+/* Wells
+---------------------------------------------------- */
+
+.well {
+    background: $grey-lighter;
+    padding: $box-padding;
 }

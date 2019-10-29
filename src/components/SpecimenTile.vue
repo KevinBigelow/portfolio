@@ -1,10 +1,10 @@
 <template>
-  <div class="column is-half">
-    <router-link :to="{name: 'specimen', params: {slug: specimen.slug}}">
-      <img :src="require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`)">
-      {{ specimen.name }}
-    </router-link>
-  </div>
+  <router-link
+          :to="{name: 'specimen', params: {slug: specimen.slug}}"
+          class="specimen-tile flex align-items--center justify-content--center"
+          :style="{'background-image': 'url(' + require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`) + ')'}">
+    <span class="button ui-button-icon-secondary">Check it out</span>
+  </router-link>
 </template>
 
 <script>

@@ -1,9 +1,16 @@
 <template>
   <div>
-    <span v-if="specimen">
-      {{specimen.name}}
-      <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)">
-    </span>
+    <section class="well is-paddingless margin-bottom--md">
+      <router-link :to="{name: 'home'}" class="button is-text">‹ Back to all work</router-link>
+    </section>
+    <article v-if="specimen">
+      <h1 class="title is-size-2">{{specimen.name}}</h1>
+      <h2 class="subtitle is-size-4 has-text-primary"><span v-for="cat in specimen.categories" :key="cat">{{cat}}, </span></h2>
+      <p class="is-family-sans-serif">{{ specimen.description }}</p>
+      <div class="well margin-top--xl">
+        <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)" class="is-full-width">
+      </div>
+    </article>
   </div>
 </template>
 
