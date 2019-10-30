@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <section class="well is-paddingless margin-bottom--md">
-      <router-link :to="{name: 'home'}" class="button is-text">‹ Back to all work</router-link>
+  <div class="page-content">
+    <section class="well is-paddingless mb-2">
+      <router-link :to="{name: 'home'}" class="button is-text">‹ Back to all Work</router-link>
     </section>
     <article v-if="specimen">
       <h1 class="title is-size-2">{{specimen.name}}</h1>
-      <h2 class="subtitle is-size-4 has-text-primary"><span v-for="cat in specimen.categories" :key="cat">{{cat}}, </span></h2>
-      <p class="is-family-sans-serif">{{ specimen.description }}</p>
-      <div class="well margin-top--xl">
+      <h2 class="subtitle is-size-4 is-size-3-fullhd has-text-primary"><span v-for="cat in specimen.categories" :key="cat">{{cat}}, </span></h2>
+      <p class="is-family-sans-serif is-size-5-fullhd">{{ specimen.description }}</p>
+      <div class="well mt-3">
         <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)" class="is-full-width">
       </div>
     </article>

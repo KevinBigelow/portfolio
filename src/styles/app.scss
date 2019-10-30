@@ -1,37 +1,86 @@
 
-/* Layout
----------------------------------------------------- */
+html {
+    font-size: 14px;
 
-.app-layout {
-    display: grid;
-    grid-template-columns: 25% 1fr;
-}
-
-.app-navbar {
-    background: #F7F7F7;
-    @include flex(column);
-    justify-content: space-between;
-    align-items: center;
-
-    .button {
-        max-width: 180px;
+    @media screen and (min-width: $widescreen) {
+        font-size: 16px;
     }
 }
 
-.app-navbar--heading {
-    padding: 27vh 1rem 1rem;
-}
+/* Layout
+---------------------------------------------------- */
 
 .app-navbar--footer {
     padding: 1rem;
 }
 
-.app-content {
-    height: 100vh;
-    overflow-y: scroll;
-    background: #EFEFEF;
-    padding: 50px 80px 80px;
+.app-navbar {
+    padding: 1rem;
 }
+
+.app-navbar--button {
+    max-width: 180px;
+}
+
+.app-content {
+    background: #EFEFEF;
+    padding: 30px;
+    min-height: 100vh;
+
+    @media screen and (min-width: $fullhd) {
+        padding: 50px 80px 80px;
+    }
+}
+
+.page-content {
+    max-width: 1440px;
+}
+
+@media screen and (min-width: $desktop) {
+
+    .app-navbar {
+        width: $navbar-width--desktop;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: #F7F7F7;
+        @include flex(column);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .app-navbar--heading {
+        padding: 27vh 0 1rem;
+    }
+
+    .app-content {
+        margin-left: $navbar-width--desktop;
+    }
+}
+
+@media screen and (min-width: $widescreen) {
+
+    .app-navbar {
+        width: $navbar-width--widescreen;
+    }
+
+    .app-content {
+        margin-left: $navbar-width--widescreen;
+    }
+}
+
+@media screen and (min-width: $fullhd) {
+
+    .app-navbar {
+        width: $navbar-width--fullhd;
+    }
+
+    .app-content {
+        margin-left: $navbar-width--fullhd;
+    }
+}
+
 
 /* Specimen Tiles
 ---------------------------------------------------- */
@@ -44,7 +93,7 @@
     background-repeat: no-repeat;
     position: relative;
 
-    .button, &:after {
+    .specimen-link-text, &:after {
         transition: opacity .25s;
     }
 
@@ -58,15 +107,15 @@
         left: 0;
         right: 0;
         z-index: 0;
-        opacity: 1;
+        opacity: .85;
     }
 
-    .button {
+    .specimen-link-text {
         z-index: 1;
     }
 
     &:not(:hover) {
-        .button, &:after {
+        .specimen-link-text, &:after {
             opacity: 0;
         }
     }
@@ -87,4 +136,15 @@
 .well {
     background: $grey-lighter;
     padding: $box-padding;
+}
+
+
+/* Staggered Columns
+---------------------------------------------------- */
+
+@media screen and (min-width: $desktop) {
+
+    .staggered-column {
+        margin-top: 8rem;
+    }
 }

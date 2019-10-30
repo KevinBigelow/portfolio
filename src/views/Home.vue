@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <div class="columns" v-if="portfolio">
-      <div class="column is-half">
+    <div class="columns is-tablet" v-if="portfolio">
+      <div class="column is-half-tablet">
         <SpecimenTile :specimen="portfolio.NeutronWingSticker" :key="portfolio.NeutronWingSticker.slug"></SpecimenTile>
         <SpecimenTile :specimen="portfolio.NeutronPromoPamphlet" :key="portfolio.NeutronPromoPamphlet.slug"></SpecimenTile>
         <SpecimenTile :specimen="portfolio.Fusion" :key="portfolio.Fusion.slug"></SpecimenTile>
       </div>
-      <div class="column is-half margin-top--xl">
+      <div class="column is-half-tablet staggered-column">
         <SpecimenTile :specimen="portfolio.CallCenterPortal" :key="portfolio.CallCenterPortal.slug"></SpecimenTile>
         <SpecimenTile :specimen="portfolio.ProtonWatchlists" :key="portfolio.ProtonWatchlists.slug"></SpecimenTile>
       </div>
