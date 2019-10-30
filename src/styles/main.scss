@@ -1,10 +1,12 @@
 
 // Setup
-@import "variables";
+@import "variables/default";
 @import "mixins/mixins";
 
 // Vendor
 @import "~bulma/bulma";
+
+@import "variables/generic";
 
 // Utilities
 @import "typography";

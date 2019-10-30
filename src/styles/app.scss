@@ -23,7 +23,7 @@ html {
 }
 
 .app-content {
-    background: #EFEFEF;
+    background: $grey-lightest;
     padding: 30px;
     min-height: 100vh;
 
@@ -44,7 +44,6 @@ html {
         top: 0;
         bottom: 0;
         left: 0;
-        background: #F7F7F7;
         @include flex(column);
         justify-content: space-between;
         align-items: center;
