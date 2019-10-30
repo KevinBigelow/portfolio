@@ -91,6 +91,8 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    border: 7px solid $well-color;
+    border-radius: $well-radius;
 
     .specimen-link-text, &:after {
         transition: opacity .25s;
@@ -133,8 +135,9 @@ html {
 ---------------------------------------------------- */
 
 .well {
-    background: $grey-lighter;
+    background: $well-color;
     padding: $box-padding;
+    border-radius: $well-radius;
 }
 
 

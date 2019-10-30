@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home page-content">
     <div class="columns is-tablet" v-if="portfolio">
       <div class="column is-half-tablet">
         <SpecimenTile :specimen="portfolio.NeutronWingSticker" :key="portfolio.NeutronWingSticker.slug"></SpecimenTile>
