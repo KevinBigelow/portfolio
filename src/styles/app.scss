@@ -23,7 +23,7 @@ html {
 }
 
 .app-content {
-    background: $grey-lightest;
+    background: $white-ter;
     padding: 30px;
     min-height: 100vh;
 
@@ -117,7 +117,7 @@ html {
     }
 
     &:not(:hover) {
-        border-color: $well-color;
+        border-color: $well-dark-color;
         .specimen-link-text, &:after {
             opacity: 0;
         }
@@ -143,7 +143,11 @@ html {
 }
 
 .well-vertical-gradient {
-    background: linear-gradient($well-gradient-top, $well-gradient-middle, $well-gradient-bottom);
+    background: linear-gradient($well-gradient-start, $well-gradient-middle, $well-gradient-end);
+}
+
+.well-horizontal-gradient {
+    background: linear-gradient(to right, $well-gradient-start, $well-gradient-end);
 }
 
 
