@@ -91,7 +91,8 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    border: 7px solid $well-color;
+    transition: border-color .25s;
+    border: 7px solid lighten($primary, 5%);
     border-radius: $well-radius;
 
     .specimen-link-text, &:after {
@@ -116,6 +117,7 @@ html {
     }
 
     &:not(:hover) {
+        border-color: $well-color;
         .specimen-link-text, &:after {
             opacity: 0;
         }
@@ -138,6 +140,10 @@ html {
     background: $well-color;
     padding: $box-padding;
     border-radius: $well-radius;
+}
+
+.well-vertical-gradient {
+    background: linear-gradient($well-gradient-top, $well-gradient-middle, $well-gradient-bottom);
 }
 
 

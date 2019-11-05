@@ -3,3 +3,13 @@
     unicode-bidi:bidi-override;
     direction:rtl;
 }
+
+.specimen-page-content {
+    max-width: 50rem;
+
+    br {
+        content: '';
+        display: block;
+        height: .75rem;
+    }
+}

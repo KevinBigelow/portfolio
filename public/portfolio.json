@@ -2,7 +2,7 @@
   "NeutronWingSticker": {
     "slug": "NeutronWingSticker",
     "name": "Neutron Wing Sticker",
-    "description": "Captain, why are we out here chasing comets? Maybe we better talk out here; the observation lounge has turned into a swamp. I suggest you drop it, Mr. Data. Some days you get the bear, and some days the bear gets you. Maybe if we felt any human loss as keenly as we feel one of those close to us, human history would be far less bloody. For an android with no feelings, he sure managed to evoke them in others. Sure. You'd be surprised how far a hug goes with Geordi, or Worf. This is not about revenge. This is about justice. You're going to be an interesting companion, Mr. Data. We have a saboteur aboard.",
+    "description": "Neutron provides metaphorical wings to their employees and to the clients they work with. I designed them to be handed out with business cards at conferences and other networking events.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
@@ -14,7 +14,7 @@
   "Fusion": {
     "slug": "Fusion",
     "name": "Fusion System UI",
-    "description": "lorem ipsum dolor sit amghmet",
+    "description": "Fusion is a call recording management for lead generation, built to be SAAS ready. <br/>Neutron works with a large network of call centers, each of whom have their own file naming conventions. Neutron provides leads generated through these call centers to clients. Clients require a recording of the call from when the lead was generated to guarantee quality. Each client has their own file-naming requirements. <br/>Fusion parses file names provided by the call centers and uses this data to match the file to the lead data in our lead management system, then renames the file to the client’s specification and delivers the file to the client; this is called the reconciliation process. Fusion saved Neutron from a lot of manual work and we built it SAAS-ready so to be sold to other companies that face the same problem in our industry.<br/>I designed the interface, the design system, built the front end of the application, and the directed the graphic design intern in creating the custom app icons and logo.<br/>The result was a persistent layout, intuitive navigation and forms, and a delightful personality.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
@@ -26,7 +26,7 @@
   "NeutronPromoPamphlet": {
     "slug": "NeutronPromoPamphlet",
     "name": "Neutron Promo Pamphlet",
-    "description": "lorem ipsum dolor sit amghmet",
+    "description": "This pamphlet was designed to cold-pitch local businesses to purchases our web development services. The goal was to land clients by leaving an exciting, informational artifact after a conversation and cold-pitch with the potential client.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
@@ -38,7 +38,7 @@
   "CallCenterPortal": {
     "slug": "CallCenterPortal",
     "name": "Call Center Portal",
-    "description": "lorem ipsum dolor sit amghmet",
+    "description": "Positron is Neutron’s public-facing side of the technology stack. It hosts a large number of domains used to generate web leads and is integrated with several APIs in order to offer the user the maximum amount of offers.<br/>The goal of this project was to create an interface for call center agents by utilizing the codebase that had been serving offers for exclusively for web leads.<br/>The solution needed to allow call center agents to navigate the different offers returned, submit multiple offers, see real-time offer submission statuses, and get quick visibility of pertinent information of each offer. The completion of this project multiplied our revenue.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
@@ -50,7 +50,7 @@
   "ProtonWatchlists": {
     "slug": "ProtonWatchlists",
     "name": "Proton Watchlists",
-    "description": "lorem ipsum dolor sit amghmet",
+    "description": "Proton is Neutron Interactive’s lead management system. It is quite a large system and is the backbone of every client service representative’s workflow. After a number of one on one interviews with client service reps, a common problem emerged. Each had a handful of various unique pages in Proton they checked on daily. They spent excessive time digging through the software in order to perform common actions or to view the stats for those pages.<br/>Watchlists provided the ability for users to create customisable lists of pages. Each item in the list displayed the two most important stats, those being the revenue and leads sold for that day. Each item also exposed links for the two to three pages associated with the item.<br/>This was a solo project for me, though my team supported me through various interviews and brainstorming sessions. It was exhilarating to uncover the problem, design the solution, and engineer the code into Proton.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"

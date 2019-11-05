@@ -9,4 +9,8 @@ $navbar-width--fullhd: 21rem;
 $navbar-background-color: $white-ter;
 
 $well-color: $grey-lighter;
+$well-gradient-top: $well-color;
+$well-gradient-middle: $well-gradient-top;
+$well-gradient-bottom: rgba(230,230,230,0);
+
 $well-radius: $border-radius-3;
