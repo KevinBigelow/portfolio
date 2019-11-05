@@ -18,7 +18,6 @@
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,900&display=swap');
-  @import "/styles/main.scss";
 </style>
 
 <script>
