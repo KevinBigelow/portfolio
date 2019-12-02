@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import NeutronColdPitchPamphlet from "./views/NeutronColdPitchPamphlet";
 
 Vue.use(Router)
 
@@ -13,10 +14,15 @@ export default new Router({
       name: 'home',
       component: Home
     },
+    // {
+    //   path: '/:slug',
+    //   name: 'specimen',
+    //   component: () => import('./views/Specimen.vue')
+    // },
     {
       path: '/:slug',
       name: 'specimen',
-      component: () => import('./views/Specimen.vue')
+      component: NeutronColdPitchPamphlet
     },
     {
       path: '/*',
