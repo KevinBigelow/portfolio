@@ -23,16 +23,16 @@
       "Graphic Design", "Sticker Design", "Placeholder"
     ]
   },
-  "NeutronPromoPamphlet": {
-    "slug": "NeutronPromoPamphlet",
-    "name": "Neutron Promo Pamphlet",
+  "NeutronColdPitchPamphlet": {
+    "slug": "NeutronColdPitchPamphlet",
+    "name": "Neutron Cold Pitch Pamphlet",
     "description": "This pamphlet was designed to cold-pitch local businesses to purchases our web development services. The goal was to land clients by leaving an exciting, informational artifact after a conversation and cold-pitch with the potential client.",
     "featured_image": {
       "src": "featured.jpg",
-      "alt": "Stack of Neutron wing stickers"
+      "alt": "Featured page from pamphlet"
     },
     "categories": [
-      "Graphic Design", "Sticker Design", "Placeholder"
+      "Graphic Design"
     ]
   },
   "CallCenterPortal": {

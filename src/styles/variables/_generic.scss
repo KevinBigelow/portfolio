@@ -8,6 +8,11 @@ $navbar-width--fullhd: 21rem;
 
 $navbar-background-color: $white-ter;
 
+$layout-padding-sm: 3rem;
+$layout-padding-md: 4.25rem;
+$layout-padding-lg: 5.75rem;
+$layout-padding-xl: 7.25rem;
+
 
 /* Wells
 ---------------------------------------------------- */
@@ -19,3 +24,8 @@ $well-gradient-end: rgba(239,239,239,0);
 $well-dark-color: $grey-lighter;
 
 $well-radius: $border-radius-3;
+
+/* Specimen View
+---------------------------------------------------- */
+
+$specimen-page-background-color: $white-ter;
