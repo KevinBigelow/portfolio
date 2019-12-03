@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import NeutronColdPitchPamphlet from "./views/NeutronColdPitchPamphlet";
 
 Vue.use(Router)
 
@@ -12,17 +10,32 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: () => import('./views/Home.vue')
     },
-    // {
-    //   path: '/:slug',
-    //   name: 'specimen',
-    //   component: () => import('./views/Specimen.vue')
-    // },
     {
       path: '/:slug',
-      name: 'specimen',
-      component: NeutronColdPitchPamphlet
+      name: 'CallCenterPortal',
+      component: () => import('./views/CallCenterPortal.vue')
+    },
+    {
+      path: '/:slug',
+      name: 'Fusion',
+      component: () => import('./views/Fusion.vue')
+    },
+    {
+      path: '/:slug',
+      name: 'NeutronColdPitchPamphlet',
+      component: () => import('./views/NeutronColdPitchPamphlet.vue')
+    },
+    {
+      path: '/:slug',
+      name: 'NeutronWingSticker',
+      component: () => import('./views/NeutronWingSticker.vue')
+    },
+    {
+      path: '/:slug',
+      name: 'ProtonWatchlists',
+      component: () => import('./views/ProtonWatchlists.vue')
     },
     {
       path: '/*',
