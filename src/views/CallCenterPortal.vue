@@ -27,7 +27,7 @@
       fetchData() {
         axios.get(this.baseUrl + 'portfolio.json').then(response => {
           this.portfolio = response.data;
-          this.specimen = this.portfolio[this.$route.params.slug]
+          this.specimen = this.portfolio[this.$route.name]
         })
       },
       getImgSrc(dir, src) {

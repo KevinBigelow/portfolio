@@ -13,27 +13,27 @@ export default new Router({
       component: () => import('./views/Home.vue')
     },
     {
-      path: '/:slug',
+      path: '/CallCenterPortal',
       name: 'CallCenterPortal',
       component: () => import('./views/CallCenterPortal.vue')
     },
     {
-      path: '/:slug',
+      path: '/Fusion',
       name: 'Fusion',
       component: () => import('./views/Fusion.vue')
     },
     {
-      path: '/:slug',
+      path: '/NeutronColdPitchPamphlet',
       name: 'NeutronColdPitchPamphlet',
       component: () => import('./views/NeutronColdPitchPamphlet.vue')
     },
     {
-      path: '/:slug',
+      path: '/NeutronWingSticker',
       name: 'NeutronWingSticker',
       component: () => import('./views/NeutronWingSticker.vue')
     },
     {
-      path: '/:slug',
+      path: '/ProtonWatchlists',
       name: 'ProtonWatchlists',
       component: () => import('./views/ProtonWatchlists.vue')
     },
