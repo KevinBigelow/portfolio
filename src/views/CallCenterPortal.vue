@@ -12,31 +12,17 @@
 </template>
 
 <script>
-  import axios from 'axios'
+  import fetchSpecimen from '../mixins/fetchSpecimen.js'
+
   export default {
     name: 'Specimen',
-    data() {
-      return {
-        baseUrl: process.env.VUE_APP_BASE_URL,
-        portfolio: null,
-        specimen: null
-      }
-    },
+    mixins: [fetchSpecimen],
     props: ['slug'],
     methods: {
-      fetchData() {
-        axios.get(this.baseUrl + 'portfolio.json').then(response => {
-          this.portfolio = response.data;
-          this.specimen = this.portfolio[this.$route.name]
-        })
-      },
       getImgSrc(dir, src) {
           let image = dir + '/' + src;
           return require('../assets/' + image);
       }
-    },
-    created() {
-      this.fetchData();
-    },
+    }
   }
 </script>
