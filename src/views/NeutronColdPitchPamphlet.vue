@@ -1,9 +1,7 @@
 <template>
   <div class="specimen-page-content page-content">
     <article v-if="specimen">
-      <h1 class="title is-size-2">{{specimen.name}}</h1>
-      <h2 class="subtitle is-size-4 is-size-3-fullhd has-text-primary"><span v-for="cat in specimen.categories" :key="cat">{{cat}} </span></h2>
-      <p class="is-family-sans-serif is-size-5-fullhd p-content" v-html="specimen.description"></p>
+      <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <div class="well well-vertical-gradient mt-3">
         <img v-for="img in images" :key="img" v-lazy="getImgSrc(specimen.slug, img)" class="is-full-width mb-3"/>
       </div>
@@ -12,6 +10,7 @@
 </template>
 
 <script>
+  import SpecimenHeading from "../components/SpecimenHeading";
   import fetchSpecimen from '../mixins/fetchSpecimen.js'
 
   export default {
@@ -44,6 +43,9 @@
           let image = dir + '/' + src;
           return require('../assets/' + image);
       },
+    },
+    components: {
+      SpecimenHeading
     },
   }
 </script>
