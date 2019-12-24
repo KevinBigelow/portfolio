@@ -4,7 +4,7 @@
       <div class="app-navbar--heading">
         <h2 class="has-text-primary is-size-3-widescreen is-size-4 has-text-centered">UI Designer <span class="has-text-white has-font-family-secondary has-text-weight-bold ampersand-amplify">&</span> Developer</h2>
         <h1 class="title is-size-1-widescreen is-size-2 has-text-centered has-text-white">Kevin Bigelow</h1>
-        <router-link v-if="is_home === 'false'" :to="{name: 'home'}" class="app-navbar--button button is-layered is-primary is-large is-margin-centered is-block">View all Work</router-link>
+        <router-link v-if="is_home === 'false'" :to="{name: 'home'}" class="app-navbar--button button is-layered is-primary-gradient is-primary is-large is-margin-centered is-block">View all Work</router-link>
       </div>
       <div class="app-navbar--footer has-text-centered">
         <span class="bizarro-text">moc.liamg@ngised.wolegibnivek</span>

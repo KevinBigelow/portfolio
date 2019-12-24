@@ -22,7 +22,7 @@ $layered-button-shim: 5px;
 .button.is-layered,
 .button.is-layered:before,
 .button.is-layered:after {
-    transition: 0.3s;
+    transition: transform 0.3s;
 }
 
 // Layout
@@ -59,12 +59,22 @@ $layered-button-shim: 5px;
 }
 
 // Coloring
-.is-layered.is-primary {
+.button.is-layered {
     &:before {
-        background-color: #6675F8;
-        box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+        background-color: $layered-button-default-1;
     }
     &:after {
-        background-color: #7353EC;
+        background-color: $layered-button-default-2;
+    }
+
+    &.is-primary-gradient {
+        &:before {
+            background-color: $primary-gradient-1;
+            background: linear-gradient(-45deg, $primary-gradient-1, $primary-gradient-2);
+        }
+
+        &:after {
+            background-color: $primary-shadow;
+        }
     }
 }
