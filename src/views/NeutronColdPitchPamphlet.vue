@@ -3,6 +3,10 @@
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <div class="well well-vertical-gradient mt-3">
+        <img v-for="(data, index) in srcset" :key="index"
+             :data-srcset="getImgSrcSet(specimen.slug, index, data.sizes, data.extension)"
+             v-lazy="getImgSrc(specimen.slug, '1-cover--600.jpg')"
+             class="is-full-width mb-3">
         <img v-for="img in images" :key="img" v-lazy="getImgSrc(specimen.slug, img)" class="is-full-width mb-3"/>
       </div>
     </article>
@@ -10,16 +14,20 @@
 </template>
 
 <script>
-  import SpecimenHeading from "../components/SpecimenHeading";
+  import SpecimenHeading from "../components/SpecimenHeading"
   import fetchSpecimen from '../mixins/fetchSpecimen.js'
+  import getImgSrcSet from "../mixins/getImgSrcSet";
 
   export default {
     name: 'Specimen',
-    mixins: [fetchSpecimen],
+    mixins: [fetchSpecimen, getImgSrcSet],
     data() {
       return {
+        srcset: {
+            '1-cover': {sizes: ['600', '1000', '2108', '3648'], extension: '.jpg'},
+        },
         images: [
-            '1-cover--lg.jpg',
+            '1-cover--600.jpg',
             '2-spread-one--lg.jpg',
             '3-spread-one-detail--lg.jpg',
             '4-spread-two-a--lg.jpg',
@@ -41,7 +49,7 @@
     methods: {
       getImgSrc(dir, src) {
           let image = dir + '/' + src;
-          return require('../assets/' + image);
+          return require('@/assets/' + image);
       },
     },
     components: {
