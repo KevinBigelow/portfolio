@@ -16,10 +16,11 @@
   import SpecimenHeading from "../components/SpecimenHeading"
   import fetchSpecimen from '../mixins/fetchSpecimen.js'
   import getImgSrcSet from "../mixins/getImgSrcSet";
+  import getImgSrc from "../mixins/getImgSrc";
 
   export default {
     name: 'Specimen',
-    mixins: [fetchSpecimen, getImgSrcSet],
+    mixins: [fetchSpecimen, getImgSrcSet, getImgSrc],
     data() {
       return {
         images: {
@@ -42,12 +43,6 @@
       }
     },
     props: ['slug'],
-    methods: {
-      getImgSrc(dir, src) {
-          let image = dir + '/' + src;
-          return require('@/assets/' + image);
-      },
-    },
     components: {
       SpecimenHeading
     },
