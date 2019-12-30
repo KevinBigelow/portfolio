@@ -3,7 +3,7 @@
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <div class="well well-vertical-gradient mt-3">
-        <img v-for="(data, index) in imgs" :key="index"
+        <img v-for="(data, index) in images" :key="index"
              :data-srcset="getImgSrcSet(specimen.slug, index, data.sizes, data.extension)"
              v-lazy="getImgSrc(specimen.slug, index + '--' + data.sizes[0] + data.extension)"
              class="is-full-width mb-3">
@@ -22,7 +22,7 @@
     mixins: [fetchSpecimen, getImgSrcSet],
     data() {
       return {
-        imgs: {
+        images: {
           'cover': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
           'spreadOne': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
           'spreadOneDetail': {sizes: [600, 1000, 2108, 2736], extension: '.jpg'},
