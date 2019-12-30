@@ -3,11 +3,10 @@
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <div class="well well-vertical-gradient mt-3">
-        <img v-for="(data, index) in srcset" :key="index"
+        <img v-for="(data, index) in imgs" :key="index"
              :data-srcset="getImgSrcSet(specimen.slug, index, data.sizes, data.extension)"
-             v-lazy="getImgSrc(specimen.slug, '1-cover--600.jpg')"
+             v-lazy="getImgSrc(specimen.slug, index + '--' + data.sizes[0] + data.extension)"
              class="is-full-width mb-3">
-        <img v-for="img in images" :key="img" v-lazy="getImgSrc(specimen.slug, img)" class="is-full-width mb-3"/>
       </div>
     </article>
   </div>
@@ -23,26 +22,23 @@
     mixins: [fetchSpecimen, getImgSrcSet],
     data() {
       return {
-        srcset: {
-            '1-cover': {sizes: ['600', '1000', '2108', '3648'], extension: '.jpg'},
-        },
-        images: [
-            '1-cover--600.jpg',
-            '2-spread-one--lg.jpg',
-            '3-spread-one-detail--lg.jpg',
-            '4-spread-two-a--lg.jpg',
-            '5-spread-two-detail-a--lg.jpg',
-            '6-spread-two-b--lg.jpg',
-            '7-spread-two-detail-b--lg.jpg',
-            '8-spread-three--lg.jpg',
-            '9-spread-four-a--lg.jpg',
-            '10-spread-four-b--lg.jpg',
-            '11-spread-four-detail-b--lg.jpg',
-            '12-spread-four-transition--lg.jpg',
-            '13-spread-four-a--lg.jpg',
-            '14-spread-four-detail-a--lg.jpg',
-            '15-spread-four--lg.jpg',
-        ]
+        imgs: {
+          'cover': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadOne': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadOneDetail': {sizes: [600, 1000, 2108, 2736], extension: '.jpg'},
+          'spreadTwoA': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadTwoDetailA': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadTwoB': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadTwoDetailB': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadThree': {sizes: [600, 1000, 2108, 2736], extension: '.jpg'},
+          'spreadFourA': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadFourB': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadFourDetailB': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadFourTransition': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadFive': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadFiveA': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+          'spreadFiveDetailA': {sizes: [600, 1000, 2108, 3648], extension: '.jpg'},
+        }
       }
     },
     props: ['slug'],
