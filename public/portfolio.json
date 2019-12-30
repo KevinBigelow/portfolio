@@ -33,7 +33,24 @@
     },
     "categories": [
       "Graphic Design"
-    ]
+    ],
+    "images": {
+      "cover": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadOne": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadOneDetail": {"sizes": [600, 1000, 2108, 2736], "extension": ".jpg"},
+      "spreadTwoA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadTwoDetailA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadTwoB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadTwoDetailB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadThree": {"sizes": [600, 1000, 2108, 2736], "extension": ".jpg"},
+      "spreadFourA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadFourB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadFourDetailB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadFourTransition": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadFive": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadFiveA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
+      "spreadFiveDetailA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"}
+    }
   },
   "CallCenterPortal": {
     "slug": "CallCenterPortal",
