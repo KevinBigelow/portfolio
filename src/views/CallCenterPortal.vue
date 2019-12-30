@@ -12,17 +12,12 @@
 <script>
   import SpecimenHeading from "../components/SpecimenHeading";
   import fetchSpecimen from '../mixins/fetchSpecimen.js'
+  import getImgSrc from "../mixins/getImgSrc";
 
   export default {
     name: 'Specimen',
     props: ['slug'],
-    methods: {
-      getImgSrc(dir, src) {
-          let image = dir + '/' + src;
-          return require('../assets/' + image);
-      }
-    },
-    mixins: [fetchSpecimen],
+    mixins: [fetchSpecimen, getImgSrc],
     components: {
       SpecimenHeading
     },
