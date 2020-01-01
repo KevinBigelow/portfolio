@@ -3,7 +3,7 @@
     <div class="columns is-tablet" v-if="portfolio">
       <div class="column is-half-tablet">
         <SpecimenTile :specimen="portfolio.NeutronWingSticker" :key="portfolio.NeutronWingSticker.slug"></SpecimenTile>
-        <SpecimenTile :specimen="portfolio.NeutronColdPitchPamphlet" :key="portfolio.NeutronColdPitchPamphlet.slug"></SpecimenTile>
+        <SpecimenTile :specimen="portfolio.WebDesignMarketingPamphlet" :key="portfolio.WebDesignMarketingPamphlet.slug"></SpecimenTile>
         <SpecimenTile :specimen="portfolio.Fusion" :key="portfolio.Fusion.slug"></SpecimenTile>
       </div>
       <div class="column is-half-tablet staggered-column">

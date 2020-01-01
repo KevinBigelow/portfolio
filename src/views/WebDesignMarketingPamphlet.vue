@@ -6,6 +6,7 @@
         <img v-for="(data, index) in specimen.images" :key="index"
              :data-srcset="getImgSrcSet(specimen.slug, index, data['sizes'], data['extension'])"
              v-lazy="getImgSrc(specimen.slug, index + '--' + data['sizes'][0] + data['extension'])"
+             :alt="data['alt']"
              class="is-full-width mb-3">
       </div>
     </article>

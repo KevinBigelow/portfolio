@@ -23,9 +23,9 @@ export default new Router({
       component: () => import('./views/Fusion.vue')
     },
     {
-      path: '/NeutronColdPitchPamphlet',
-      name: 'NeutronColdPitchPamphlet',
-      component: () => import('./views/NeutronColdPitchPamphlet.vue')
+      path: '/WebDesignMarketingPamphlet',
+      name: 'WebDesignMarketingPamphlet',
+      component: () => import('./views/WebDesignMarketingPamphlet.vue')
     },
     {
       path: '/NeutronWingSticker',

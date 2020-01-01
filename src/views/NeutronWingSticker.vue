@@ -3,7 +3,11 @@
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <div class="well well-vertical-gradient mt-3">
-        <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)" class="is-full-width">
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['holding']" classes="is-full-width mb-4"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['artFront']" classes="is-full-width mb-4 mt-4"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['artBack']" classes="is-full-width mb-4 mt-4"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['stackPlusBack']" classes="is-full-width mb-3 mt-4"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['fullFront']" classes="is-full-width mb-3"></ImageComponent>
       </div>
     </article>
   </div>
@@ -11,15 +15,15 @@
 
 <script>
   import SpecimenHeading from "../components/SpecimenHeading";
+  import ImageComponent from "../components/ImageComponent";
   import fetchSpecimen from '../mixins/fetchSpecimen.js';
-  import getImgSrc from "../mixins/getImgSrc";
 
   export default {
     name: 'Specimen',
     props: ['slug'],
-    mixins: [fetchSpecimen, getImgSrc],
+    mixins: [fetchSpecimen],
     components: {
-      SpecimenHeading
+      SpecimenHeading, ImageComponent
     },
   }
 </script>

@@ -8,8 +8,16 @@
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
-      "Graphic Design", "Sticker Design", "Placeholder"
-    ]
+      "Graphic Design"
+    ],
+
+    "images": {
+      "holding": {"name": "holding", "sizes": [600, 1000, 2100, 3518], "extension": ".jpg", "alt": ""},
+      "artFront": {"name": "artFront", "sizes": [600, 1000, 2000, 3025, 3625], "extension": ".png", "alt": ""},
+      "artBack": {"name": "artBack", "sizes": [600, 1000, 2000, 3025, 3625], "extension": ".png", "alt": ""},
+      "stackPlusBack": {"name": "stackPlusBack", "sizes": [600, 1000, 2100, 3648], "extension": ".jpg", "alt": ""},
+      "fullFront": {"name": "fullFront", "sizes": [600, 1000, 2100, 3648], "extension": ".jpg", "alt": ""}
+    }
   },
   "Fusion": {
     "slug": "Fusion",
@@ -23,9 +31,9 @@
       "Graphic Design", "Sticker Design", "Placeholder"
     ]
   },
-  "NeutronColdPitchPamphlet": {
-    "slug": "NeutronColdPitchPamphlet",
-    "name": "Neutron Cold Pitch Pamphlet",
+  "WebDesignMarketingPamphlet": {
+    "slug": "WebDesignMarketingPamphlet",
+    "name": "Marketing Pamphlet for Web Design Services",
     "description": "This pamphlet was designed to cold-pitch local businesses to purchases our web development services. The goal was to land clients by leaving an exciting, informational artifact after a conversation and cold-pitch with the potential client.",
     "featured_image": {
       "src": "featured.jpg",
@@ -35,21 +43,21 @@
       "Graphic Design"
     ],
     "images": {
-      "cover": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadOne": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadOneDetail": {"sizes": [600, 1000, 2108, 2736], "extension": ".jpg"},
-      "spreadTwoA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadTwoDetailA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadTwoB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadTwoDetailB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadThree": {"sizes": [600, 1000, 2108, 2736], "extension": ".jpg"},
-      "spreadFourA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadFourB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadFourDetailB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadFourTransition": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadFive": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadFiveA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"},
-      "spreadFiveDetailA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg"}
+      "cover": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": "Pamphlet cover, which reads: It's time for a new website, and we can help."},
+      "spreadOne": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": "The first page of the pamphlet provides statistics supporting the need for a solid website."},
+      "spreadOneDetail": {"sizes": [600, 1000, 2108, 2736], "extension": ".jpg", "alt": "A closeup shot of the first page"},
+      "spreadTwoA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadTwoDetailA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadTwoB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadTwoDetailB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadThree": {"sizes": [600, 1000, 2108, 2736], "extension": ".jpg", "alt": ""},
+      "spreadFourA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadFourB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadFourDetailB": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadFourTransition": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadFiveDetailA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadFiveA": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""},
+      "spreadFive": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": ""}
     }
   },
   "CallCenterPortal": {
