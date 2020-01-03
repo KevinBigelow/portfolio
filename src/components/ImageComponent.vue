@@ -3,7 +3,8 @@
      :data-srcset="getImgSrcSet(directory, image['name'], image['sizes'], image['extension'])"
      v-lazy="getImgSrc(directory, image['name'] + '--' + image['sizes'][0] + image['extension'])"
      :alt="image['alt']"
-     :class="classes">
+     :class="classes"
+       v-if="image">
 </template>
 
 <script>
