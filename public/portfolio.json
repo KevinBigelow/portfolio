@@ -75,13 +75,21 @@
   "ProtonWatchlists": {
     "slug": "ProtonWatchlists",
     "name": "Proton Watchlists",
-    "description": "Proton is Neutron Interactive’s lead management system. It is quite a large system and is the backbone of every client service representative’s workflow. After a number of one on one interviews with client service reps, a common problem emerged. Each had a handful of various unique pages in Proton they checked on daily. They spent excessive time digging through the software in order to perform common actions or to view the stats for those pages.<br/>Watchlists provided the ability for users to create customisable lists of pages. Each item in the list displayed the two most important stats, those being the revenue and leads sold for that day. Each item also exposed links for the two to three pages associated with the item.<br/>This was a solo project for me, though my team supported me through various interviews and brainstorming sessions. It was exhilarating to uncover the problem, design the solution, and engineer the code into Proton.",
+    "description": "The Problem: Users spend excessive time digging through the software for stats and configuration updates. Each user has a handful of pages in Proton they checked on daily basis. Each user’s page set was unique to them.<br>The Solution: Provide the ability for users to create customizable lists of pages. \nEach item in the list displays the two most important stats and exposed links for the two to three pages associated with the item.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
       "Graphic Design", "Sticker Design", "Placeholder"
-    ]
+    ],
+    "images": {
+      "addToWatchlist": {"name": "addToWatchlist", "sizes": [343], "extension": ".png", "alt": ""},
+      "addToWatchlistButton": {"name": "addToWatchlistButton", "sizes": [397, 724], "extension": ".png", "alt": ""},
+      "createWatchlist": {"name": "createWatchlist", "sizes": [360], "extension": ".png", "alt": ""},
+      "dashboard": {"name": "dashboard", "sizes": [600, 1000, 1920], "extension": ".jpg", "alt": ""},
+      "existsInWatchlist": {"name": "existsInWatchlist", "sizes": [343], "extension": ".png", "alt": ""},
+      "prototypeLink": {"name": "prototypeLink", "sizes": [1234], "extension": ".jpg", "alt": ""}
+    }
   }
 }

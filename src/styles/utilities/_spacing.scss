@@ -1,76 +1,63 @@
 
-/* Margin
+/* Spacing Variables
 ---------------------------------------------------- */
 
+$sv-6: 15rem;
+$sv-5: 8rem;
+$sv-4: 5rem;
+$sv-3: 2.25rem;
+$sv-2: 1.5rem;
+$sv-1: .5rem;
+
+$sh-4: 5rem;
+$sh-3: 2.25rem;
+$sh-2: 1.5rem;
+$sh-1: .5rem;
+
+/* Margin
+---------------------------------------------------- */
 // Top
-.mt-4 {
-    margin-top: 5rem;
-}
-
-.mt-3 {
-    margin-top: 2.25rem;
-}
-
-.mt-2 {
-    margin-top: 1.5rem;
-}
-
-.mt-1 {
-    margin-top: .5rem;
-}
+.mt-6 { margin-top: $sv-6; }
+.mt-5 { margin-top: $sv-5; }
+.mt-4 { margin-top: $sv-4; }
+.mt-3 { margin-top: $sv-3; }
+.mt-2 { margin-top: $sv-2; }
+.mt-1 { margin-top: $sv-1; }
 
 // Bottom
-.mb-4 {
-    margin-bottom: 5rem;
-}
-
-.mb-3 {
-    margin-bottom: 2.25rem;
-}
-
-.mb-2 {
-    margin-bottom: 1.5rem;
-}
-
-.mb-1 {
-    margin-bottom: .5rem;
-}
+.mb-6 { margin-bottom: $sv-6; }
+.mb-5 { margin-bottom: $sv-5; }
+.mb-4 { margin-bottom: $sv-4; }
+.mb-3 { margin-bottom: $sv-3; }
+.mb-2 { margin-bottom: $sv-2; }
+.mb-1 { margin-bottom: $sv-1; }
 
 /* Padding
 ---------------------------------------------------- */
 // Top
-.pt-4 {
-    margin-top: 5rem;
-}
-
-.pt-3 {
-    margin-top: 2.25rem;
-}
-
-.pt-2 {
-    margin-top: 1.5rem;
-}
-
-.pt-1 {
-    margin-top: .5rem;
-}
+.pt-4 { padding-top: $sv-4; }
+.pt-3 { padding-top: $sv-3; }
+.pt-2 { padding-top: $sv-2; }
+.pt-1 { padding-top: $sv-1; }
 
 // Bottom
-.pb-4 {
-    margin-bottom: 5rem;
-}
+.pb-4 { padding-bottom: $sv-4; }
+.pb-3 { padding-bottom: $sv-3; }
+.pb-2 { padding-bottom: $sv-2; }
+.pb-1 { padding-bottom: $sv-1; }
 
-.pb-3 {
-    margin-bottom: 2.25rem;
-}
+// Vertical
+.pv-4 { padding-top: $sv-4; padding-bottom: $sv-4; }
+.pv-3 { padding-top: $sv-3; padding-bottom: $sv-3; }
+.pv-2 { padding-top: $sh-2; padding-bottom: $sh-2; }
+.pv-1 { padding-top: $sv-1; padding-bottom: $sv-1; }
 
-.pb-2 {
-    margin-bottom: 1.5rem;
-}
+// Horizontal
+.ph-4 { padding-left: $sh-4; padding-right: $sh-4; }
+.ph-3 { padding-left: $sh-3; padding-right: $sh-3; }
+.ph-2 { padding-left: $sh-2; padding-right: $sh-2; }
+.ph-1 { padding-left: $sh-1; padding-right: $sh-1; }
 
-.pb-1 {
-    margin-bottom: .5rem;
-}
 
 .is-full-width {
     width: 100%;
