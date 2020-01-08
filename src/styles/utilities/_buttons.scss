@@ -28,8 +28,6 @@ $layered-button-shim: 5px;
 // Layout
 .button.is-layered {
     position: relative;
-    width: 11.25rem;
-    height: 3.5rem;
 
     &:before, &:after {
         position: absolute;
@@ -56,6 +54,16 @@ $layered-button-shim: 5px;
             transform: translate(-#{$layered-button-shim}, -#{$layered-button-shim});
         }
     }
+}
+
+.button.is-layered.is-medium {
+    width: 9rem;
+    height: 3rem;
+}
+
+.button.is-layered.is-large {
+    width: 11.25rem;
+    height: 3.5rem;
 }
 
 // Coloring
