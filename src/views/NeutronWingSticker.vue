@@ -3,11 +3,11 @@
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <div class="well well-vertical-gradient mt-3">
-        <ImageComponent :directory="specimen.slug" :image="specimen.images['holding']" classes="is-full-width mb-4"></ImageComponent>
-        <ImageComponent :directory="specimen.slug" :image="specimen.images['artFront']" classes="is-full-width mb-4 mt-4"></ImageComponent>
-        <ImageComponent :directory="specimen.slug" :image="specimen.images['artBack']" classes="is-full-width mb-4 mt-4"></ImageComponent>
-        <ImageComponent :directory="specimen.slug" :image="specimen.images['stackPlusBack']" classes="is-full-width mb-3 mt-4"></ImageComponent>
-        <ImageComponent :directory="specimen.slug" :image="specimen.images['fullFront']" classes="is-full-width mb-3"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['holding']" class="is-full-width mb-4"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['artFront']" class="is-full-width mb-4 mt-4"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['artBack']" class="is-full-width mb-4 mt-4"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['stackPlusBack']" class="is-full-width mb-3 mt-4"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['fullFront']" class="is-full-width mb-3"></ImageComponent>
       </div>
     </article>
   </div>

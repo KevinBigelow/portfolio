@@ -3,7 +3,7 @@
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <div class="well well-vertical-gradient mt-3">
-        <ImageComponent :directory="specimen.slug" :image="specimen.images['dashboard']" classes="is-full-width mb-5"></ImageComponent>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['dashboard']" class="is-full-width mb-5"></ImageComponent>
       </div>
       <ul>
         <li class="flex blurb-with-image">
@@ -14,7 +14,7 @@
             <p class="is-family-sans-serif mb-1">This button is a bookmark with superpowers.</p>
           </div>
           <div class="pt-4 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['addToWatchlistButton']" classes=""></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['addToWatchlistButton']" :constrained="0"></ImageComponent>
           </div>
         </li>
         <li class="flex blurb-with-image">
@@ -25,7 +25,7 @@
             <p class="is-family-sans-serif mb-1">Once the user types anything into the input field, the save button appears.</p>
           </div>
           <div class="pt-2 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['createWatchlist']" classes=""></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['createWatchlist']" :constrained="0"></ImageComponent>
           </div>
         </li>
         <li class="flex blurb-with-image">
@@ -34,7 +34,7 @@
             <p class="is-family-sans-serif mb-1">Any watchlist created by the user is displayed and easily added to with the click of a button.</p>
           </div>
           <div class="pt-2 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['addToWatchlist']" classes=""></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['addToWatchlist']" :constrained="0"></ImageComponent>
           </div>
         </li>
         <li class="flex blurb-with-image">
@@ -44,13 +44,13 @@
             <p class="is-family-sans-serif mb-1">On hover, a message is displayed.</p>
           </div>
           <div class="pt-2 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['existsInWatchlist']" classes=""></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['existsInWatchlist']" :constrained="0"></ImageComponent>
           </div>
         </li>
       </ul>
       <div class="well well-vertical-gradient mt-3">
         <a href="#">
-          <ImageComponent :directory="specimen.slug" :image="specimen.images['prototypeLink']" classes="is-full-width"></ImageComponent>
+          <ImageComponent :directory="specimen.slug" :image="specimen.images['prototypeLink']" class="is-full-width"></ImageComponent>
         </a>
       </div>
     </article>

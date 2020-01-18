@@ -3,7 +3,7 @@
      :data-srcset="getImgSrcSet(directory, image['name'], image['sizes'], image['extension'])"
      v-lazy="getImgSrc(directory, image['name'] + '--' + image['sizes'][0] + image['extension'])"
      :alt="image['alt']"
-     :class="classes"
+     :class="classes" :style="[constrained != null ?{maxWidth: image['sizes'][constrained] + `px`} : {}]"
        v-if="image">
 </template>
 
@@ -16,7 +16,8 @@
     props: {
       directory: null,
       image: {},
-      classes: null
+      classes: null,
+      constrained: null // takes number referring to image.sizes data
     }
   }
 </script>

@@ -12,14 +12,14 @@
           <p class="is-family-sans-serif mb-1">It contains fields shared by all offer forms which eliminates duplicated work when submitting multiple offers.</p>
           <p class="is-family-sans-serif mb-1">It also provides the call center agent visibility into all fields pre-populated by the GET request parameters.</p>
           <div class="mt-3">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['emptyState']" classes="border-radius--3"></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['emptyState']" class="border-radius--3"></ImageComponent>
           </div>
         </li>
         <li class="mt-4">
           <h3 class="has-text-primary is-size-3">Search Results</h3>
           <p class="is-family-sans-serif mb-1">Our system returns as many offers match the parameters and opens the top result by default.</p>
           <div class="mt-3">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['results']" classes="border-radius--3"></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['results']" class="border-radius--3"></ImageComponent>
           </div>
         </li>
         <li class="mt-4 flex blurb-with-image">
@@ -28,7 +28,7 @@
             <p class="is-family-sans-serif mb-1">Our system returns as many offers match the parameters and opens the top result by default.</p>
           </div>
           <div class="pt-4 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['current']" classes=""></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['current']" :constrained="0"></ImageComponent>
           </div>
         </li>
         <li class="mt-4 flex blurb-with-image">
@@ -38,7 +38,7 @@
             <p class="is-family-sans-serif mb-1">If that is the case the call center agent is able to toggle open a list of the available programs without digging into the form.</p>
           </div>
           <div class="pt-4 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['toggle']" classes=""></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['toggle']" :constrained="0"></ImageComponent>
           </div>
         </li>
         <li class="mt-4 flex blurb-with-image">
@@ -47,7 +47,7 @@
             <p class="is-family-sans-serif mb-1">Call center agents need to move quickly through offers. Seeing the current state of previously submitted offers allows the agents to move onto the next offer quickly.</p>
           </div>
           <div class="pt-4 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" classes=""></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" :constrained="0"></ImageComponent>
           </div>
         </li>
         <li class="mt-4">
