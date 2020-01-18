@@ -103,7 +103,7 @@ html {
     background-repeat: no-repeat;
     position: relative;
     transition: border-color .25s;
-    border: 4px solid lighten($primary, 5%);
+    //border: 4px solid lighten($primary, 5%);
     border-radius: $well-radius;
 
     .specimen-link-text, &:after {
@@ -128,7 +128,7 @@ html {
     }
 
     &:not(:hover) {
-        border-color: $well-dark-color;
+        //border-color: $well-dark-color;
         .specimen-link-text, &:after {
             opacity: 0;
         }
