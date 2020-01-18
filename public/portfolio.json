@@ -10,7 +10,6 @@
     "categories": [
       "Graphic Design"
     ],
-
     "images": {
       "holding": {"name": "holding", "sizes": [600, 1000, 2100, 3518], "extension": ".jpg", "alt": ""},
       "artFront": {"name": "artFront", "sizes": [600, 1000, 2000, 3025, 3625], "extension": ".png", "alt": ""},
@@ -29,7 +28,17 @@
     },
     "categories": [
       "UI/UX", "Design Direction", "jQuery", "HTML", "SCSS", "Django"
-    ]
+    ],
+    "images": {
+      "analyticsSourcePage": {"name": "analyticsSourcePage", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
+      "analyticsSources": {"name": "analyticsSources", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
+      "login": {"name": "login", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
+      "logout": {"name": "logout", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
+      "reconciliationFail": {"name": "reconciliationFail", "sizes": [600, 1000, 2005, 3360], "extension": ".jpg", "alt": ""},
+      "reconciliationSuccess": {"name": "reconciliationSuccess", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
+      "resetPassword": {"name": "resetPassword", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
+      "updatePassword": {"name": "updatePassword", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""}
+    }
   },
   "WebDesignMarketingPamphlet": {
     "slug": "WebDesignMarketingPamphlet",
