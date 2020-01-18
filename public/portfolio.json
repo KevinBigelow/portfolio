@@ -22,13 +22,13 @@
   "Fusion": {
     "slug": "Fusion",
     "name": "Fusion System UI",
-    "description": "Fusion is a call recording management for lead generation, built to be SAAS ready. <br/>Neutron works with a large network of call centers, each of whom have their own file naming conventions. Neutron provides leads generated through these call centers to clients. Clients require a recording of the call from when the lead was generated to guarantee quality. Each client has their own file-naming requirements. <br/>Fusion parses file names provided by the call centers and uses this data to match the file to the lead data in our lead management system, then renames the file to the client’s specification and delivers the file to the client; this is called the reconciliation process. Fusion saved Neutron from a lot of manual work and we built it SAAS-ready so to be sold to other companies that face the same problem in our industry.<br/>I designed the interface, the design system, built the front end of the application, and the directed the graphic design intern in creating the custom app icons and logo.<br/>The result was a persistent layout, intuitive navigation and forms, and a delightful personality.",
+    "description": "Fusion is a call recording management built for lead generation experts, built to be SAAS ready.  <br/>I designed the interface, engineered the front-end of the application, and the directed the graphic design intern in creating the custom app icons and logo. <br/>The result was a persistent layout, intuitive navigation and forms, a delightful personality, and a fulfilled deadline.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
-      "Graphic Design", "Sticker Design", "Placeholder"
+      "UI/UX", "Design Direction", "jQuery", "HTML", "SCSS", "Django"
     ]
   },
   "WebDesignMarketingPamphlet": {
@@ -63,14 +63,21 @@
   "CallCenterPortal": {
     "slug": "CallCenterPortal",
     "name": "Call Center Portal",
-    "description": "Positron is Neutron’s public-facing side of the technology stack. It hosts a large number of domains used to generate web leads and is integrated with several APIs in order to offer the user the maximum amount of offers.<br/>The goal of this project was to create an interface for call center agents by utilizing the codebase that had been serving offers for exclusively for web leads.<br/>The solution needed to allow call center agents to navigate the different offers returned, submit multiple offers, see real-time offer submission statuses, and get quick visibility of pertinent information of each offer. The completion of this project multiplied our revenue.",
+    "description": "The goal of this project was to create an interface for call center agents by utilizing the codebase that had been serving offers for exclusively for web leads.<br/>The solution needed to allow call center agents to navigate the different offers returned, submit multiple offers, see real-time offer submission statuses, and get quick visibility of pertinent information of each offer. The completion of this project multiplied our revenue.",
     "featured_image": {
       "src": "featured.jpg",
-      "alt": "Stack of Neutron wing stickers"
+      "alt": "Screenshot of software"
     },
     "categories": [
-      "Graphic Design", "Sticker Design", "Placeholder"
-    ]
+      "UI/UX", "JS/jQuery", "HTML/SCSS", "Python/Django"
+    ],
+    "images": {
+      "current": {"name":  "current", "sizes": [391, 782], "extension": ".png", "alt": ""},
+      "emptyState": {"name":  "emptyState", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": ""},
+      "feedback": {"name":  "feedback", "sizes": [453, 906], "extension": ".png", "alt": ""},
+      "results": {"name":  "results", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": ""},
+      "toggle": {"name":  "toggle", "sizes": [382, 764], "extension": ".png", "alt": ""}
+    }
   },
   "ProtonWatchlists": {
     "slug": "ProtonWatchlists",

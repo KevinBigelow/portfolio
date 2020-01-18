@@ -73,17 +73,6 @@
   }
 </script>
 
-<style scoped>
-  .blurb-with-image {
-    flex-direction: column;
-    margin-bottom: 10rem;
-  }
-  @media screen and (min-width: 1000px) {
-    .blurb-with-image {
-      flex-direction: row;
-    }
-    .blurb-with-image > * {
-      width: 50%;
-    }
-  }
+<style scoped lang="scss">
+  @import "../../src/styles/components/_blurb_with_image.scss";
 </style>
