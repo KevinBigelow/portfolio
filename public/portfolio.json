@@ -91,11 +91,11 @@
       "Graphic Design", "Sticker Design", "Placeholder"
     ],
     "images": {
-      "addToWatchlist": {"name": "addToWatchlist", "sizes": [343], "extension": ".png", "alt": ""},
-      "addToWatchlistButton": {"name": "addToWatchlistButton", "sizes": [397, 724], "extension": ".png", "alt": ""},
-      "createWatchlist": {"name": "createWatchlist", "sizes": [360], "extension": ".png", "alt": ""},
+      "addToWatchlist": {"name": "addToWatchlist", "sizes": [343, 686], "extension": ".png", "alt": ""},
+      "addToWatchlistButton": {"name": "addToWatchlistButton", "sizes": [397, 794], "extension": ".png", "alt": ""},
+      "createWatchlist": {"name": "createWatchlist", "sizes": [360, 720], "extension": ".png", "alt": ""},
       "dashboard": {"name": "dashboard", "sizes": [600, 1000, 1920], "extension": ".jpg", "alt": ""},
-      "existsInWatchlist": {"name": "existsInWatchlist", "sizes": [343], "extension": ".png", "alt": ""},
+      "existsInWatchlist": {"name": "existsInWatchlist", "sizes": [343, 686], "extension": ".png", "alt": ""},
       "prototypeLink": {"name": "prototypeLink", "sizes": [1234], "extension": ".jpg", "alt": ""}
     }
   }
