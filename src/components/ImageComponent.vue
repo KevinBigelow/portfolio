@@ -2,9 +2,9 @@
   <img :key="image['name']"
      :data-srcset="getImgSrcSet(directory, image['name'], image['sizes'], image['extension'])"
      v-lazy="getImgSrc(directory, image['name'] + '--' + image['sizes'][0] + image['extension'])"
+     v-if="image"
      :alt="image['alt']"
-     :class="classes" :style="[constrained != null ?{maxWidth: image['sizes'][constrained] + `px`} : {}]"
-       v-if="image">
+     :class="classes" :style="[constrained != null ? {maxWidth: image['sizes'][constrained] + `px`} : {}]">
 </template>
 
 <script>

@@ -48,3 +48,7 @@
     },
   }
 </script>
+
+<style scoped lang="scss">
+  @import "../styles/views/specimen";
+</style>

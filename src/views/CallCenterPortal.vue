@@ -74,5 +74,6 @@
 </script>
 
 <style scoped lang="scss">
-  @import "../../src/styles/components/_blurb_with_image.scss";
+  @import "../styles/views/specimen";
+  @import "../styles/components/_blurb_with_image.scss";
 </style>
