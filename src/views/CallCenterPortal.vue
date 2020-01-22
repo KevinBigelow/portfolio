@@ -11,20 +11,20 @@
           <p class="is-family-sans-serif mb-1">The starting point for any call center agent is the long form displayed below.</p>
           <p class="is-family-sans-serif mb-1">It contains fields shared by all offer forms which eliminates duplicated work when submitting multiple offers.</p>
           <p class="is-family-sans-serif mb-1">It also provides the call center agent visibility into all fields pre-populated by the GET request parameters.</p>
-          <ImageComponent :directory="specimen.slug" :image="specimen.images['emptyState']" class="border-radius--3 mt-3"></ImageComponent>
+          <ImageComponent :directory="specimen.slug" :image="specimen.images['emptyState']" class="is-full-width border-radius--3 mt-3"></ImageComponent>
         </li>
         <li class="mt-4">
           <h3 class="has-text-primary is-size-3">Search Results</h3>
           <p class="is-family-sans-serif mb-1">Our system returns as many offers match the parameters and opens the top result by default.</p>
-          <ImageComponent :directory="specimen.slug" :image="specimen.images['results']" class="border-radius--3 mt-3"></ImageComponent>
+          <ImageComponent :directory="specimen.slug" :image="specimen.images['results']" class="is-full-width border-radius--3 mt-3"></ImageComponent>
         </li>
         <li class="mt-4 flex blurb-with-image">
           <div>
             <h3 class="has-text-primary is-size-3">Result Cards</h3>
             <p class="is-family-sans-serif mb-1">Our system returns as many offers match the parameters and opens the top result by default.</p>
           </div>
-          <div class="pt-4 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['current']" :constrained="0"></ImageComponent>
+          <div class="ph-1">
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['current']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
           </div>
         </li>
         <li class="mt-4 flex blurb-with-image">
@@ -33,8 +33,8 @@
             <p class="is-family-sans-serif mb-1">Sometimes offers have more than one program option in its form.</p>
             <p class="is-family-sans-serif mb-1">If that is the case the call center agent is able to toggle open a list of the available programs without digging into the form.</p>
           </div>
-          <div class="pt-4 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['toggle']" :constrained="0"></ImageComponent>
+          <div class="ph-1">
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['toggle']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
           </div>
         </li>
         <li class="mt-4 flex blurb-with-image">
@@ -42,8 +42,8 @@
             <h3 class="has-text-primary is-size-3">Instant Feedback</h3>
             <p class="is-family-sans-serif mb-1">Call center agents need to move quickly through offers. Seeing the current state of previously submitted offers allows the agents to move onto the next offer quickly.</p>
           </div>
-          <div class="pt-4 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" :constrained="0"></ImageComponent>
+          <div class="ph-1">
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
           </div>
         </li>
         <li class="mt-4">

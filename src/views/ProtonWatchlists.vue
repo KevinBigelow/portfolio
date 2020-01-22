@@ -14,7 +14,7 @@
             <p class="is-family-sans-serif mb-1">This button is a bookmark with superpowers.</p>
           </div>
           <div class="pt-4 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['addToWatchlistButton']" :constrained="0"></ImageComponent>
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['addToWatchlistButton']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
           </div>
         </li>
         <li class="flex blurb-with-image">
@@ -24,8 +24,8 @@
             <p class="is-family-sans-serif mb-1">When the dialog opens, the field is active and ready for input.</p>
             <p class="is-family-sans-serif mb-1">Once the user types anything into the input field, the save button appears.</p>
           </div>
-          <div class="pt-2 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['createWatchlist']" :constrained="0"></ImageComponent>
+          <div class="pt-1 ph-1">
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['createWatchlist']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
           </div>
         </li>
         <li class="flex blurb-with-image">
@@ -33,8 +33,8 @@
             <h3 class="has-text-primary is-size-3">If watchlists exist</h3>
             <p class="is-family-sans-serif mb-1">Any watchlist created by the user is displayed and easily added to with the click of a button.</p>
           </div>
-          <div class="pt-2 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['addToWatchlist']" :constrained="0"></ImageComponent>
+          <div class="pt-1 ph-1">
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['addToWatchlist']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
           </div>
         </li>
         <li class="flex blurb-with-image">
@@ -43,8 +43,8 @@
             <p class="is-family-sans-serif mb-1">Any watchlist that already includes the page will be listed, but disabled and grayed out.</p>
             <p class="is-family-sans-serif mb-1">On hover, a message is displayed.</p>
           </div>
-          <div class="pt-2 ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['existsInWatchlist']" :constrained="0"></ImageComponent>
+          <div class="pt-1 ph-1">
+            <ImageComponent :directory="specimen.slug" :image="specimen.images['existsInWatchlist']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
           </div>
         </li>
       </ul>
