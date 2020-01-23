@@ -51,19 +51,5 @@
 </script>
 
 <style lang="scss" scoped>
-  .home-content {
-    background: $white-ter;
-    padding: 0 2rem;
-    margin: 4.5rem 0 6rem;
-    border-radius: $border-radius-20;
-
-    .column {
-      margin-bottom: -6rem;
-
-      :first-child {
-        margin-top: -4rem;
-      }
-    }
-
-  }
+  @import "../styles/views/home";
 </style>
