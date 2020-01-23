@@ -2,6 +2,8 @@
   <div class="specimen-page-content page-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
+      <p class="is-family-sans-serif p-content mb-1"><span class="has-text-weight-bold">The Problem:</span> Users spend excessive time digging through the software for stats and configuration updates. Each user has a handful of pages in Proton they checked on daily basis. Each user’s page set was unique to them.</p>
+      <p class="is-family-sans-serif p-content mb-1"><span class="has-text-weight-bold">The Solution:</span> Provide the ability for users to create customizable lists of pages. Each item in the list displays the two most important stats and exposed links for the two to three pages associated with the item.</p>
       <div class="well well-vertical-gradient mt-3">
         <ImageComponent :directory="specimen.slug" :image="specimen.images['dashboard']" class="is-full-width mb-5"></ImageComponent>
       </div>

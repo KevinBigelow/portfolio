@@ -2,7 +2,6 @@
   "NeutronWingSticker": {
     "slug": "NeutronWingSticker",
     "name": "Neutron Wing Sticker",
-    "description": "Neutron provides metaphorical wings to their employees and to the clients they work with. They were designed them to be handed out with business cards at conferences and other networking events.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
@@ -21,7 +20,6 @@
   "Fusion": {
     "slug": "Fusion",
     "name": "Fusion System UI",
-    "description": "Fusion is a call recording management built for lead generation experts, built to be SAAS ready.  <br/>I designed the interface, engineered the front-end of the application, and the directed the graphic design intern in creating the custom app icons and logo. <br/>The result was a persistent layout, intuitive navigation and forms, a delightful personality, and a fulfilled deadline.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
@@ -43,7 +41,6 @@
   "WebDesignMarketingPamphlet": {
     "slug": "WebDesignMarketingPamphlet",
     "name": "Marketing Pamphlet for Web Design Services",
-    "description": "This pamphlet was designed to cold-pitch local businesses to purchases our web development services. The goal was to land clients by leaving an exciting, informational artifact after a conversation and cold-pitch with the potential client.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Featured page from pamphlet"
@@ -72,7 +69,6 @@
   "CallCenterPortal": {
     "slug": "CallCenterPortal",
     "name": "Call Center Portal",
-    "description": "The goal of this project was to create an interface for call center agents by utilizing the codebase that had been serving offers for exclusively for web leads.<br/>The solution needed to allow call center agents to navigate the different offers returned, submit multiple offers, see real-time offer submission statuses, and get quick visibility of pertinent information of each offer. The completion of this project multiplied our revenue.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Screenshot of software"
@@ -91,7 +87,6 @@
   "ProtonWatchlists": {
     "slug": "ProtonWatchlists",
     "name": "Proton Watchlists",
-    "description": "The Problem: Users spend excessive time digging through the software for stats and configuration updates. Each user has a handful of pages in Proton they checked on daily basis. Each user’s page set was unique to them.<br>The Solution: Provide the ability for users to create customizable lists of pages. \nEach item in the list displays the two most important stats and exposed links for the two to three pages associated with the item.",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Stack of Neutron wing stickers"
