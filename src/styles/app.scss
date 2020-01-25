@@ -32,7 +32,10 @@ html {
 }
 
 .page-content {
-    //max-width: 1440px;
+    background: $content-background-color;
+    border-radius: $border-radius-20;
+    padding: $layout-padding-sm;
+    margin-right: 1rem;
 }
 
 //.content-static-overflow {
