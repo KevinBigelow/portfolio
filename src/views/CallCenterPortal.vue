@@ -3,7 +3,8 @@
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <p class="is-family-sans-serif p-content mb-1">The goal of this project was to create an interface for call center agents by utilizing the codebase that had been serving offers for exclusively for web leads.</p>
-      <p class="is-family-sans-serif p-content mb-1">The solution needed to allow call center agents to navigate the different offers returned, submit multiple offers, see real-time offer submission statuses, and get quick visibility of pertinent information of each offer. The completion of this project multiplied our revenue.</p>
+      <p class="is-family-sans-serif p-content mb-1">The solution needed to allow call center agents to navigate the offers returned, submit multiple offers, see real-time offer submission statuses, and get quick visibility of pertinent information of each offer.
+      <p class="is-family-sans-serif p-content mb-1">The completion of this project multiplied our revenue.</p>
       <div class="well well-vertical-gradient mt-3">
         <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)" class="is-full-width">
       </div>
@@ -11,7 +12,7 @@
         <li class="mt-4">
           <h3 class="has-text-primary is-size-3">The Long Form</h3>
           <p class="is-family-sans-serif p-content mb-1">The starting point for any call center agent is the long form displayed below.</p>
-          <p class="is-family-sans-serif p-content mb-1">It contains fields shared by all offer forms which eliminates duplicated work when submitting multiple offers.</p>
+          <p class="is-family-sans-serif p-content mb-1">It contains fields shared by all offer forms, which eliminates duplicated work when submitting multiple offers.</p>
           <p class="is-family-sans-serif p-content mb-1">It also provides the call center agent visibility into all fields pre-populated by the GET request parameters.</p>
           <ImageComponent :directory="specimen.slug" :image="specimen.images['emptyState']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
         </li>
@@ -19,15 +20,6 @@
           <h3 class="has-text-primary is-size-3">Search Results</h3>
           <p class="is-family-sans-serif p-content mb-1">Our system returns as many offers match the parameters and opens the top result by default.</p>
           <ImageComponent :directory="specimen.slug" :image="specimen.images['results']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
-        </li>
-        <li class="mt-4 flex blurb-with-image">
-          <div>
-            <h3 class="has-text-primary is-size-3">Result Cards</h3>
-            <p class="is-family-sans-serif mb-1">Our system returns as many offers match the parameters and opens the top result by default.</p>
-          </div>
-          <div class="ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['current']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
-          </div>
         </li>
         <li class="mt-4 flex blurb-with-image">
           <div>
@@ -46,12 +38,6 @@
           </div>
           <div class="ph-1">
             <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
-          </div>
-        </li>
-        <li class="mt-4">
-          <div>
-            <h3 class="has-text-primary is-size-3">Writing the Code</h3>
-            <p class="is-family-sans-serif mb-1">Prior to the completion of this project, we had a separate codebase for our call-center portal and our web portals. Something about django jquery and some interesting constraint you hit.</p>
           </div>
         </li>
       </ul>
