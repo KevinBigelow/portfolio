@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app-layout is-relative">
+  <div id="app" class="app-layout is-relative animated fadeIn delay-1s">
     <KinesisContainer class="app-navbar" tag="nav">
       <div class="app-navbar--heading">
         <h2 class="has-text-primary is-size-4 has-text-centered">UI Designer <span class="has-text-white has-font-family-secondary has-text-weight-bold ampersand-amplify">&</span> Developer</h2>
