@@ -30,11 +30,9 @@
     background: rgba(0,0,0,.05);
     display: block;
     opacity: 1;
+    margin: $specimen-tile-shadow-offset -$specimen-tile-shadow-offset -$specimen-tile-shadow-offset $specimen-tile-shadow-offset;
     border-radius: $specimen-tile-border-radius;
-    top: $specimen-tile-shadow-offset;
-    bottom: -$specimen-tile-shadow-offset;
-    left: $specimen-tile-shadow-offset;
-    right: -$specimen-tile-shadow-offset;
+    top: 0; bottom: 0; left: 0; right: 0;
 }
 
 .specimen-tile-container {
