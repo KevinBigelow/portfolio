@@ -25,7 +25,7 @@
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
-      "UI/UX", "Design Direction", "jQuery", "HTML", "SCSS", "Django"
+      "UI", "UX", "Python", "Django", "jQuery", "SCSS", "HTML"
     ],
     "images": {
       "analyticsSourcePage": {"name": "analyticsSourcePage", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
@@ -40,7 +40,7 @@
   },
   "WebDesignMarketingPamphlet": {
     "slug": "WebDesignMarketingPamphlet",
-    "name": "Marketing Pamphlet for Web Design Services",
+    "name": "Web Design Marketing Pamphlet",
     "featured_image": {
       "src": "featured.jpg",
       "alt": "Featured page from pamphlet"
@@ -74,7 +74,7 @@
       "alt": "Screenshot of software"
     },
     "categories": [
-      "UI/UX", "JS/jQuery", "HTML/SCSS", "Python/Django"
+      "UI", "UX", "Python", "Django", "jQuery", "SCSS", "HTML"
     ],
     "images": {
       "current": {"name":  "current", "sizes": [391, 782], "extension": ".png", "alt": ""},
@@ -92,7 +92,7 @@
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
-      "Graphic Design", "Sticker Design", "Placeholder"
+      "UI", "UX", "Python", "Django", "jQuery", "SCSS", "HTML"
     ],
     "images": {
       "addToWatchlist": {"name": "addToWatchlist", "sizes": [343, 686], "extension": ".png", "alt": ""},
