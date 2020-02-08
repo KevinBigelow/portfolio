@@ -31,19 +31,16 @@
   import { KinesisContainer, KinesisElement } from 'vue-kinesis'
 
   export default {
-    data() {
-      return {
-        is_home: 'true'
-      }
-    },
     watch: {
-      $route: function() {
+      $route (to) {
+        document.title = to.meta.title || 'Portfolio by Kevin Bigelow';
         if (this.$route.name === "home") {
           this.is_home = 'true'
         } else {
           this.is_home = 'false'
         }
-      }
+      },
+      immediate: true
     },
     components: {
       KinesisContainer, KinesisElement

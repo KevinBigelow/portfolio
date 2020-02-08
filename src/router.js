@@ -10,36 +10,54 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: () => import('./views/Home.vue')
+      component: () => import('./views/Home.vue'),
     },
     {
       path: '/call-center-portal',
       name: 'CallCenterPortal',
-      component: () => import('./views/CallCenterPortal.vue')
+      component: () => import('./views/CallCenterPortal.vue'),
+      meta: {
+        title: 'Call Center Portal'
+      }
     },
     {
       path: '/fusion',
       name: 'Fusion',
-      component: () => import('./views/Fusion.vue')
+      component: () => import('./views/Fusion.vue'),
+      meta: {
+        title: 'Fusion Web App UI'
+      }
     },
     {
       path: '/web-design-marketing-pamphlet',
       name: 'WebDesignMarketingPamphlet',
-      component: () => import('./views/WebDesignMarketingPamphlet.vue')
+      component: () => import('./views/WebDesignMarketingPamphlet.vue'),
+      meta: {
+        title: 'Web Design Marketing Pamphlet'
+      }
     },
     {
       path: '/neutron-wing-sticker',
       name: 'NeutronWingSticker',
-      component: () => import('./views/NeutronWingSticker.vue')
+      component: () => import('./views/NeutronWingSticker.vue'),
+      meta: {
+        title: 'Neutron Wing Sticker'
+      }
     },
     {
       path: '/proton-watchlists',
       name: 'ProtonWatchlists',
-      component: () => import('./views/ProtonWatchlists.vue')
+      component: () => import('./views/ProtonWatchlists.vue'),
+      meta: {
+        title: 'Proton Watchlists'
+      }
     },
     {
       path: '/*',
-      component: () => import('./views/404.vue')
+      component: () => import('./views/404.vue'),
+      meta: {
+        title: '404 - Uh Oh'
+      }
     },
   ]
 })

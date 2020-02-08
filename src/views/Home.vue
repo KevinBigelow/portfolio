@@ -26,6 +26,7 @@
         portfolio: null,
         loading: true,
         errored: false,
+        is_home: true,
       }
     },
     created() {
