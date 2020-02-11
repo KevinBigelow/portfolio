@@ -1,10 +1,10 @@
 <template>
   <KinesisContainer event="mouse">
-    <KinesisElement type="depth" :strength="1" class="specimen-tile-container mb-3">
+    <KinesisElement type="depth" :strength="2" class="specimen-tile-container mb-3">
       <router-link :to="{name: specimen.slug, params: {slug: specimen.slug}}"
                    class="specimen-tile flex align-items--end justify-content--center"
                    :style="{'background-image': 'url(' + require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`) + ')'}">
-        <KinesisElement class="specimen-tile-meta-wrap is-full-width">
+        <KinesisElement class="specimen-tile-meta-wrap is-full-width" :strength="1" type="translate">
           <div class="specimen-tile-meta card border-radius--5">
             <div class="card-header flex--row justify-content--space-between">
               <div class="pv-2 ph-2">

@@ -37,12 +37,12 @@
 
 .specimen-tile-container {
 
-    .specimen-tile-meta, .specimen-tile:after {
+    .specimen-tile-meta, .specimen-tile:after, .specimen-tile-shadow {
         transition: opacity .25s;
     }
 
     &:not(:hover) {
-        .specimen-tile-meta, .specimen-tile:after {
+        .specimen-tile-meta, .specimen-tile:after, .specimen-tile-shadow {
             opacity: 0;
         }
     }
