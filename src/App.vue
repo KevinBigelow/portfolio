@@ -1,20 +1,18 @@
 <template>
   <div id="app" class="app-layout is-relative animated fadeIn delay-1s">
-    <KinesisContainer class="app-navbar" tag="nav">
-      <div class="app-navbar--heading">
-        <h2 class="has-text-primary is-size-4 has-text-centered">UI Designer <span class="has-text-white has-font-family-secondary has-text-weight-bold ampersand-amplify">&</span> Developer</h2>
-        <h1 class="title is-size-2 has-text-centered has-text-white">Kevin Bigelow</h1>
-        <transition name="router-anim" enter-active-class="animated bounceIn delay-1s" leave-active-class="animated zoomOut ">
+    <KinesisContainer class="app-navbar app-navbar-grid" tag="nav">
+      <h2 class="app-navbar--subtitle has-text-primary has-text-centered grid-title">UI Designer <span class="has-text-white has-font-family-secondary has-text-weight-bold ampersand-amplify">&</span> Developer</h2>
+      <h1 class="app-navbar--title title has-text-centered has-text-white grid-name is-marginless">Kevin Bigelow</h1>
+      <div class="grid-actions">
+        <transition name="router-anim" enter-active-class="animated bounceIn delay-1s" leave-active-class="animated zoomOut">
           <KinesisElement type="depth" :strength="6" v-if="is_home === 'false'">
             <router-link :to="{name: 'home'}" class="app-navbar--button button is-layered is-primary-gradient is-primary is-medium is-margin-centered is-block">View all Work</router-link>
           </KinesisElement>
         </transition>
       </div>
-      <div class="app-navbar--footer has-text-centered">
-        <span class="bizarro-text has-text-white">moc.liamg@ngised.wolegibnivek</span>
-      </div>
+      <span class="grid-contact bizarro-text has-text-white">moc.liamg@ngised.wolegibnivek</span>
     </KinesisContainer>
-    <article class="app-content">
+    <article class="app-content view-content">
       <transition @before-enter="beforeEnter" mode="out-in" name="router-anim" enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster">
         <router-view/>
       </transition>
