@@ -6,6 +6,29 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
+  scrollBehavior(to, from, savedPosition) {
+    const position = {
+      x: 0,
+      y: 0
+    };
+
+    if (savedPosition) {
+      position.x = savedPosition.x;
+      position.y = savedPosition.y;
+    }
+
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+
+    return new Promise(resolve => {
+      this.app.$root.$once("scrollBeforeEnter", () => {
+        setTimeout(() => {
+          resolve(position);
+        }, 250)
+      });
+    });
+  },
   routes: [
     {
       path: '/',

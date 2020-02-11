@@ -15,7 +15,7 @@
       </div>
     </KinesisContainer>
     <article class="app-content">
-      <transition name="router-anim" enter-active-class="animated fadeIn faster delay-500ms" leave-active-class="animated fadeOut faster">
+      <transition @before-enter="beforeEnter" mode="out-in" name="router-anim" enter-active-class="animated fadeIn faster delay-500ms" leave-active-class="animated fadeOut faster">
         <router-view/>
       </transition>
     </article>
@@ -31,6 +31,16 @@
   import { KinesisContainer, KinesisElement } from 'vue-kinesis'
 
   export default {
+    data() {
+      return {
+        is_home: ''
+      }
+    },
+    methods: {
+      beforeEnter () {
+        this.$root.$emit('scrollBeforeEnter');
+      }
+    },
     watch: {
       $route (to) {
         document.title = to.meta.title || 'Portfolio by Kevin Bigelow';
