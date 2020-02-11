@@ -54,7 +54,7 @@ html {
                              'contact contact actions';
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $widescreen) {
         grid-template-columns: 1fr;
         grid-column-gap: .5rem;
         grid-template-areas: 'title'
