@@ -1,15 +1,8 @@
 
-.specimen-page-content {
+.specimen-view-content {
+    padding: $layout-padding-xs 0;
 
     @media screen and (min-width: $tablet) {
         padding: $layout-padding-md;
-    }
-
-    @media screen and (min-width: $desktop) {
-        padding: $layout-padding-lg;
-    }
-
-    @media screen and (min-width: $widescreen) {
-        padding: $layout-padding-xl;
     }
 }

@@ -1,13 +1,11 @@
 <template>
-  <div class="specimen-page-content page-content">
+  <div class="specimen-view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <p class="is-family-sans-serif p-content mb-1">Fusion is a call recording management web application, designed for lead generation experts, built to be SAAS ready.</p>
       <p class="is-family-sans-serif p-content mb-1">I designed the interface, engineered the front-end of the application, and the directed the graphic design intern in creating the custom app icons and logo.</p>
-      <p class="is-family-sans-serif p-content mb-1">The result was a persistent layout, intuitive navigation and forms, a delightful personality, and a fulfilled deadline.</p>
-      <div class="well well-vertical-gradient mt-3">
-        <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)" class="is-full-width">
-      </div>
+      <p class="is-family-sans-serif p-content mb-4">The result was a persistent layout, intuitive navigation and forms, a delightful personality, and a fulfilled deadline.</p>
+      <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)" class="is-full-width">
       <ul>
         <li class="mt-4">
           <h3 class="has-text-primary is-size-3 mb-1">Account/Authentication Pages</h3>

@@ -1,5 +1,5 @@
 <template>
-  <div class="specimen-page-content page-content">
+  <div class="specimen-view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <h3 class="is-size-5 has-text-weight-bold mb-1">The Problem:</h3>
@@ -7,11 +7,9 @@
       <p class="is-family-sans-serif p-content mb-2">Each user has a handful of pages in Proton they checked on daily basis. Each user’s page set was unique to them.</p>
       <h3 class="is-size-5 has-text-weight-bold mb-1">The Solution:</h3>
       <p class="is-family-sans-serif p-content mb-1">Provide the ability for users to create customizable lists of pages.</p>
-      <p class="is-family-sans-serif p-content mb-1">Each item in the list displays the two most important stats and exposed links for the two to three pages associated with the item.</p>
-      <div class="well well-vertical-gradient mt-3">
-        <div class="mb-4" style="padding:56.25% 0 0 0;position:relative;">
-          <iframe src="https://player.vimeo.com/video/388148236?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-        </div>
+      <p class="is-family-sans-serif p-content mb-4">Each item in the list displays the two most important stats and exposed links for the two to three pages associated with the item.</p>
+      <div class="mb-4" style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/388148236?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
       <ul>
         <li class="flex blurb-with-image">
