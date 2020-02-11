@@ -4,7 +4,7 @@
       <div class="app-navbar--heading">
         <h2 class="has-text-primary is-size-4 has-text-centered">UI Designer <span class="has-text-white has-font-family-secondary has-text-weight-bold ampersand-amplify">&</span> Developer</h2>
         <h1 class="title is-size-2 has-text-centered has-text-white">Kevin Bigelow</h1>
-        <transition name="router-anim" enter-active-class="animated bounceIn delay-500ms" leave-active-class="animated bounceOut">
+        <transition name="router-anim" enter-active-class="animated bounceIn delay-1s" leave-active-class="animated zoomOut ">
           <KinesisElement type="depth" :strength="6" v-if="is_home === 'false'">
             <router-link :to="{name: 'home'}" class="app-navbar--button button is-layered is-primary-gradient is-primary is-medium is-margin-centered is-block">View all Work</router-link>
           </KinesisElement>
@@ -15,7 +15,7 @@
       </div>
     </KinesisContainer>
     <article class="app-content">
-      <transition @before-enter="beforeEnter" mode="out-in" name="router-anim" enter-active-class="animated fadeIn faster delay-500ms" leave-active-class="animated fadeOut faster">
+      <transition @before-enter="beforeEnter" mode="out-in" name="router-anim" enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster">
         <router-view/>
       </transition>
     </article>

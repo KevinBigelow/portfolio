@@ -23,9 +23,7 @@ export default new Router({
 
     return new Promise(resolve => {
       this.app.$root.$once("scrollBeforeEnter", () => {
-        setTimeout(() => {
-          resolve(position);
-        }, 250)
+        resolve(position);
       });
     });
   },
