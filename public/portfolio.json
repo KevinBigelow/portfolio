@@ -21,7 +21,7 @@
     "slug": "Fusion",
     "name": "Fusion Web App UI",
     "featured_image": {
-      "src": "featured.jpg",
+      "src": "featured-2400.jpg",
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
@@ -34,6 +34,7 @@
       "logout": {"name": "logout", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
       "reconciliationFail": {"name": "reconciliationFail", "sizes": [600, 1000, 2005, 3360], "extension": ".jpg", "alt": ""},
       "reconciliationSuccess": {"name": "reconciliationSuccess", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
+      "reconciliationSuccessCropped": {"name": "reconciliationSuccessCropped", "sizes": [600, 1238, 2400, 3360], "extension": ".jpg", "alt": ""},
       "resetPassword": {"name": "resetPassword", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},
       "updatePassword": {"name": "updatePassword", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""}
     }
@@ -88,7 +89,7 @@
     "slug": "ProtonWatchlists",
     "name": "Proton Watchlists",
     "featured_image": {
-      "src": "featured.jpg",
+      "src": "featured-2400.jpg",
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
