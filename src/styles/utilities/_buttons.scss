@@ -1,0 +1,88 @@
+.is-transparent {
+    background: none;
+}
+
+.no-border-radius {
+    border-radius: 0;
+}
+
+
+/* Layered Button
+---------------------------------------------------- */
+
+$layered-button-shim: 5px;
+
+// Override default button
+.button.is-layered,
+.button.is-layered:hover {
+    background: none;
+}
+
+// Transition
+.button.is-layered,
+.button.is-layered:before,
+.button.is-layered:after {
+    transition: transform 0.3s;
+}
+
+// Layout
+.button.is-layered {
+    position: relative;
+
+    &:before, &:after {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        top: 0;
+        left: 0;
+        content: '';
+    }
+
+    &:before {
+        z-index: -1;
+    }
+
+    &:after {
+        transform: translate($layered-button-shim, $layered-button-shim);
+        z-index: -2;
+    }
+
+    &:hover {
+        transform: translate($layered-button-shim, $layered-button-shim);
+
+        &:after {
+            transform: translate(-#{$layered-button-shim}, -#{$layered-button-shim});
+        }
+    }
+}
+
+.button.is-layered.is-medium {
+    width: 9rem;
+    height: 3rem;
+}
+
+.button.is-layered.is-large {
+    width: 11.25rem;
+    height: 3.5rem;
+}
+
+// Coloring
+.button.is-layered {
+    &:before {
+        background-color: $layered-button-default-1;
+    }
+    &:after {
+        background-color: $layered-button-default-2;
+    }
+
+    &.is-primary-gradient {
+        &:before {
+            background-color: $primary-gradient-1;
+            background: linear-gradient(-45deg, $primary-gradient-1, $primary-gradient-2);
+        }
+
+        &:after {
+            background-color: $primary-shadow;
+        }
+    }
+}

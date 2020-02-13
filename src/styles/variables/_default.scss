@@ -1,0 +1,37 @@
+
+/* Typography
+---------------------------------------------------- */
+$family-primary: 'Big Shoulders Text', Helvetica, Arial, sans-serif;
+$title-weight: 900;
+
+
+/* Color
+---------------------------------------------------- */
+$primary: #6475F8;
+$grey-lighter: #E6E6E6;
+$grey-lightest: #EFEFEF;
+$white-ter: #F7F7F7;
+$gray-mineshaft: #333333;
+$black: #000000;
+
+$primary-gradient-1: #6675F8;
+$primary-gradient-2: #9271FF;
+
+$primary-shadow: rgba(115, 83, 236, .55);
+
+$layered-button-default-1: #5f5f5f;
+$layered-button-default-2: $gray-mineshaft;
+
+
+$border-radius-3: 3px;
+$border-radius-5: 5px;
+$border-radius-10: 10px;
+$border-radius-20: 20px;
+
+$body-background-color: $black;
+
+
+/* Specimen Tiles
+---------------------------------------------------- */
+$specimen-tile-border-radius: $border-radius-10;
+$specimen-tile-shadow-offset: .075rem;

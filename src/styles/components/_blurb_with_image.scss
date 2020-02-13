@@ -1,0 +1,16 @@
+
+.blurb-with-image {
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 10rem;
+    }
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+
+        > * {
+            width: 50%;
+        }
+    }
+}

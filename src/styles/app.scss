@@ -1,0 +1,149 @@
+
+html {
+    font-size: 90%;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 100%;
+    }
+
+    @media screen and (min-width: $fullhd) {
+        font-size: 115%;
+    }
+}
+
+/* Layout
+---------------------------------------------------- */
+
+.app-content, .app-navbar {
+    padding: $layout-padding-xs;
+
+    @media screen and (min-width: $tablet) {
+        padding: $layout-padding-sm;
+    }
+}
+
+.app-navbar {
+
+    @media screen and (min-width: $widescreen) {
+        margin-bottom: 2rem
+    }
+}
+
+.app-content {
+    min-height: 100vh;
+    background: $content-background-color;
+}
+
+.app-navbar-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: 'name actions'
+                         'title actions'
+                         'contact actions';
+    align-items: center;
+    justify-content: flex-start;
+    .grid-name { grid-area: name; justify-self: flex-start; }
+    .grid-title { grid-area: title; justify-self: flex-start; }
+    .grid-contact { grid-area: contact; justify-self: flex-start; }
+    .grid-actions { grid-area: actions; justify-self: flex-end; }
+
+    @media screen and (min-width: $tablet) {
+        grid-template-columns: max-content max-content 1fr;
+        grid-column-gap: .5rem;
+        grid-template-areas: 'name title actions'
+                             'contact contact actions';
+    }
+
+    @media screen and (min-width: $widescreen) {
+        grid-template-columns: 1fr;
+        grid-column-gap: .5rem;
+        grid-template-areas: 'title'
+                             'name'
+                             'actions'
+                             'contact';
+        .grid-name,
+        .grid-title,
+        .grid-contact,
+        .grid-actions { justify-self: center; }
+        .grid-contact { align-self: flex-end; }
+        grid-template-rows: max-content max-content 5rem 1fr;
+    }
+}
+
+.app-navbar--title, .app-navbar--subtitle {
+    font-size: $size-5;
+}
+
+@media screen and (min-width: $tablet) {
+
+    .app-navbar--title, .app-navbar--subtitle {
+        font-size: $size-4;
+    }
+}
+
+@media screen and (min-width: $widescreen) {
+
+    .app-navbar--title {
+        font-size: $size-2;
+    }
+
+    .app-navbar {
+        width: $navbar-width--widescreen;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        padding: 27vh 0 1rem;
+    }
+
+    .app-content {
+        margin-left: $navbar-width--widescreen;
+    }
+}
+
+@media screen and (min-width: $fullhd) {
+
+    .app-navbar {
+        width: $navbar-width--fullhd;
+    }
+
+    .app-content {
+        margin-left: $navbar-width--fullhd;
+    }
+}
+
+/* Image
+---------------------------------------------------- */
+
+.image-cover {
+    width: 100%;
+}
+
+
+/* Wells
+---------------------------------------------------- */
+
+.well {
+    background: $well-color;
+    padding: $box-padding;
+    border-radius: $well-radius;
+}
+
+.well-vertical-gradient {
+    background: linear-gradient($well-gradient-start, $well-gradient-middle, $well-gradient-end);
+}
+
+.well-horizontal-gradient {
+    background: linear-gradient(to right, $well-gradient-start, $well-gradient-end);
+}
+
+
+/* Staggered Columns
+---------------------------------------------------- */
+
+@media screen and (min-width: $widescreen) {
+
+    .staggered-column {
+        margin-top: 8rem;
+    }
+}
