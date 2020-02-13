@@ -10,6 +10,8 @@
     background-repeat: no-repeat;
     border-radius: $specimen-tile-border-radius;
 
+    @media (hover: none) { padding: .5rem; }
+
     &:after {
         content: '';
         position: absolute;
@@ -35,19 +37,39 @@
     top: 0; bottom: 0; left: 0; right: 0;
 }
 
+.specimen-tile-meta-category { color: $primary; }
+
 .specimen-tile-container {
+    .specimen-tile-meta,
+    .specimen-tile:after,
+    .specimen-tile-shadow { transition: opacity .25s; }
 
-    .specimen-tile-meta, .specimen-tile:after, .specimen-tile-shadow {
-        transition: opacity .25s;
-    }
+    @media (hover: hover) {
+        &:not(:hover) {
+            .specimen-tile-meta,
+            .specimen-tile:after,
+            .specimen-tile-shadow { opacity: 0; }
+        }
 
-    &:not(:hover) {
-        .specimen-tile-meta, .specimen-tile:after, .specimen-tile-shadow {
-            opacity: 0;
+        &:hover {
+            .specimen-tile-shadow { background: rgba(141,151,227,.25); }
         }
     }
-
-    &:hover .specimen-tile-shadow {
-        background: rgba(141,151,227,.25);
-    }
 }
+
+@media (hover: none) {
+    .specimen-tile-meta {
+        opacity: 1;
+        background-color: $primary-gradient-1;
+        background: linear-gradient(-45deg, $primary-gradient-1, $primary-gradient-2);
+    }
+
+    .specimen-tile-meta-category,
+    .specimen-tile-meta-title,
+    .specimen-tile-meta-icon { color: $white; }
+
+    .specimen-tile:after,
+    .specimen-tile-shadow { opacity: 0; }
+}
+
+.specimen-tile-bg-top-left .specimen-tile { background-position: top left; }
