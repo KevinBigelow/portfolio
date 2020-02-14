@@ -5,7 +5,7 @@
       <h1 class="app-navbar--title title has-text-centered has-text-white grid-name is-marginless">Kevin Bigelow</h1>
       <div class="grid-actions">
         <transition name="router-anim" enter-active-class="animated bounceIn delay-1s" leave-active-class="animated zoomOut">
-          <KinesisElement type="depth" :strength="10" v-if="is_home === 'false'">
+          <KinesisElement type="depth" :strength="8" v-if="is_home === 'false'">
             <router-link :to="{name: 'home'}" class="app-navbar--button button is-layered is-primary-gradient is-primary is-medium is-margin-centered is-block">View all Work</router-link>
           </KinesisElement>
         </transition>

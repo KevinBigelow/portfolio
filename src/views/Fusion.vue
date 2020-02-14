@@ -1,5 +1,5 @@
 <template>
-  <div class="specimen-view-content">
+  <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <p class="is-family-sans-serif p-content mb-1">Fusion is a call recording management web application, designed for lead generation experts, built to be SAAS ready.</p>

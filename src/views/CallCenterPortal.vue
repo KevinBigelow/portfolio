@@ -1,5 +1,5 @@
 <template>
-  <div class="specimen-view-content">
+  <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <p class="is-family-sans-serif p-content mb-1">The goal of this project was to create an interface for call center agents by utilizing the codebase that had been serving offers for exclusively for web leads.</p>

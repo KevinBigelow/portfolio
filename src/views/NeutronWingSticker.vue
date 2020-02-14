@@ -1,5 +1,5 @@
 <template>
-  <div class="specimen-view-content">
+  <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <p class="is-family-sans-serif p-content mb-1">Neutron provides metaphorical wings to their employees and <span class="is-non-breaking">to their clients.</span></p>
