@@ -22,16 +22,17 @@ html {
     }
 }
 
-.app-navbar {
-
-    @media screen and (min-width: $widescreen) {
-        margin-bottom: 2rem
-    }
-}
-
 .app-content {
     min-height: 100vh;
     background: $content-background-color;
+}
+
+.view-content {
+    max-width: 1600px;
+}
+
+.app-navbar {
+    background: $navbar-background-color;
 }
 
 .app-navbar-grid {
@@ -93,7 +94,7 @@ html {
         top: 0;
         bottom: 0;
         left: 0;
-        padding: 27vh 0 1rem;
+        padding: 27vh 0 4rem;
     }
 
     .app-content {

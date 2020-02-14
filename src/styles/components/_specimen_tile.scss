@@ -11,6 +11,9 @@
     border-radius: $specimen-tile-border-radius;
 
     @media (hover: none) { padding: .5rem; }
+    @media screen and (min-width: 1660px) {
+        height: 500px;
+    }
 
     &:after {
         content: '';

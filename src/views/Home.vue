@@ -1,5 +1,5 @@
 <template>
-  <div class="home-content">
+  <div class="view-content">
     <div class="columns is-tablet" v-if="portfolio">
       <div class="column is-half-tablet">
         <SpecimenTile :specimen="portfolio.NeutronWingSticker" :key="portfolio.NeutronWingSticker.slug"></SpecimenTile>
@@ -52,6 +52,5 @@
 </script>
 
 <style lang="scss">
-  @import "../styles/views/home";
   @import "../styles/components/specimen_tile";
 </style>

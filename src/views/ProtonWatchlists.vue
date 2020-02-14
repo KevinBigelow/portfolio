@@ -1,5 +1,5 @@
 <template>
-  <div class="specimen-view-content">
+  <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <h3 class="is-size-5 has-text-weight-bold mb-1">The Problem:</h3>

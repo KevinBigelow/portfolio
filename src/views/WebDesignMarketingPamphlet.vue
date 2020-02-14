@@ -1,5 +1,5 @@
 <template>
-  <div class="specimen-view-content">
+  <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <p class="is-family-sans-serif p-content mb-1">This pamphlet was designed to be brought with our sales force while cold-pitching local businesses with web design and development proposals.</p>
