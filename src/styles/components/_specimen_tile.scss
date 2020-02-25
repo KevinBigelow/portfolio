@@ -29,7 +29,7 @@
 .specimen-tile-meta-wrap {
     z-index: 1;
     top: 0; left: 0; right: 0; bottom: 0;
-    padding: 2rem;
+    margin: 2rem;
 }
 
 .specimen-tile-shadow {
@@ -51,12 +51,25 @@
     .specimen-tile-shadow { transition: opacity .25s; }
 
     @media (hover: hover) {
+        .specimen-tile-meta {
+            position: absolute;
+            bottom: 0;
+            left: 0; right: 0;
+            transition: opacity .25s, bottom .5s;
+        }
         &:not(:hover) {
             .specimen-tile-meta,
             .specimen-tile:after,
             .specimen-tile-shadow { opacity: 0; }
+
+            .specimen-tile-meta {
+                transition: opacity .15s, bottom .5s;
+                bottom: 10%;
+            }
         }
+
     }
+
 }
 
 @media (hover: none) {
