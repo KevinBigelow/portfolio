@@ -1,6 +1,6 @@
 <template>
   <div class="view-content">
-    <div class="columns is-tablet" v-if="portfolio">
+    <div class="columns is-0 is-variable is-tablet" v-if="portfolio">
       <div class="column is-half-tablet">
         <SpecimenTile :specimen="portfolio.NeutronWingSticker" :key="portfolio.NeutronWingSticker.slug"></SpecimenTile>
         <SpecimenTile :specimen="portfolio.ProtonWatchlists" :key="portfolio.ProtonWatchlists.slug"></SpecimenTile>

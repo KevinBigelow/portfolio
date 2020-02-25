@@ -47,6 +47,8 @@
 
 .specimen-tile-container {
 
+    margin: 2rem 1rem;
+
     .specimen-tile:after,
     .specimen-tile-shadow {
         transition-timing-function: cubic-bezier(1.0, 0.1, 0.1, 1.0);
