@@ -46,15 +46,19 @@
 .specimen-tile-meta-category { color: $primary; }
 
 .specimen-tile-container {
-    .specimen-tile-meta,
+
     .specimen-tile:after,
-    .specimen-tile-shadow { transition: opacity .25s; }
+    .specimen-tile-shadow {
+        transition-timing-function: cubic-bezier(1.0, 0.1, 0.1, 1.0);
+        transition: opacity .25s;
+    }
 
     @media (hover: hover) {
         .specimen-tile-meta {
             position: absolute;
             bottom: 0;
             left: 0; right: 0;
+            transition-timing-function: cubic-bezier(1.0, 0.1, 0.1, 1.0);
             transition: opacity .25s, bottom .5s;
         }
         &:not(:hover) {
@@ -63,6 +67,7 @@
             .specimen-tile-shadow { opacity: 0; }
 
             .specimen-tile-meta {
+                transition-timing-function: ease-in-out;
                 transition: opacity .15s, bottom .5s;
                 bottom: 10%;
             }
