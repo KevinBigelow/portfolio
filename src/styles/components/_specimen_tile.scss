@@ -3,7 +3,6 @@
     overflow: hidden;
     position: relative;
     z-index: 2;
-    padding: 2rem;
     min-height: 400px;
     background-size: cover;
     background-position: center;
@@ -21,13 +20,16 @@
         z-index: 0;
         display: block;
         opacity: .85;
-        //background: $primary;
         background-color: $primary-gradient-1;
         background: linear-gradient(-45deg, $primary-gradient-1, $primary-gradient-2);
         top: 0; bottom: 0; left: 0; right: 0;
     }
 
-    .specimen-tile-meta-wrap { z-index: 1; }
+}
+.specimen-tile-meta-wrap {
+    z-index: 1;
+    top: 0; left: 0; right: 0; bottom: 0;
+    padding: 2rem;
 }
 
 .specimen-tile-shadow {
@@ -37,7 +39,6 @@
     box-shadow: 0 0 2px 1px $specimen-tile-shadow-color;
     display: block;
     opacity: 1;
-    margin: $specimen-tile-shadow-offset -$specimen-tile-shadow-offset -$specimen-tile-shadow-offset $specimen-tile-shadow-offset;
     border-radius: $specimen-tile-border-radius;
     top: 0; bottom: 0; left: 0; right: 0;
 }
