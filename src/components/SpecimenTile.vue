@@ -1,6 +1,6 @@
 <template>
   <KinesisContainer event="mouse">
-    <KinesisElement type="depth" :strength="2" class="specimen-tile-container mb-3">
+    <KinesisElement type="depth" :strength="4" class="specimen-tile-container mb-3">
       <router-link :to="{name: specimen.slug, params: {slug: specimen.slug}}"
                    class="specimen-tile flex align-items--end justify-content--center box-shadow--gray-light"
                    :style="{'background-image': 'url(' + require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`) + ')'}">
