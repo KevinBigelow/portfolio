@@ -1,14 +1,15 @@
 <template>
   <div class="view-content">
-    <div class="columns is-tablet" v-if="portfolio">
+    <div class="columns is-0 is-variable is-tablet" v-if="portfolio">
       <div class="column is-half-tablet">
         <SpecimenTile :specimen="portfolio.NeutronWingSticker" :key="portfolio.NeutronWingSticker.slug"></SpecimenTile>
+        <SpecimenTile :specimen="portfolio.ProtonWatchlists" :key="portfolio.ProtonWatchlists.slug"></SpecimenTile>
         <SpecimenTile :specimen="portfolio.WebDesignMarketingPamphlet" :key="portfolio.WebDesignMarketingPamphlet.slug"></SpecimenTile>
-        <SpecimenTile :specimen="portfolio.Fusion" :key="portfolio.Fusion.slug" class="specimen-tile-bg-top-left"></SpecimenTile>
+
       </div>
       <div class="column is-half-tablet staggered-column">
         <SpecimenTile :specimen="portfolio.CallCenterPortal" :key="portfolio.CallCenterPortal.slug"></SpecimenTile>
-        <SpecimenTile :specimen="portfolio.ProtonWatchlists" :key="portfolio.ProtonWatchlists.slug"></SpecimenTile>
+        <SpecimenTile :specimen="portfolio.Fusion" :key="portfolio.Fusion.slug" class="specimen-tile-bg-top-left"></SpecimenTile>
       </div>
     </div>
   </div>

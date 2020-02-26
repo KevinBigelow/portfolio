@@ -3,7 +3,6 @@
     overflow: hidden;
     position: relative;
     z-index: 2;
-    padding: 2rem;
     min-height: 400px;
     background-size: cover;
     background-position: center;
@@ -21,21 +20,25 @@
         z-index: 0;
         display: block;
         opacity: .85;
-        background: $primary;
+        background-color: $primary-gradient-1;
+        background: linear-gradient(-45deg, $primary-gradient-1, $primary-gradient-2);
         top: 0; bottom: 0; left: 0; right: 0;
     }
 
-    .specimen-tile-meta-wrap { z-index: 1; }
+}
+.specimen-tile-meta-wrap {
+    z-index: 1;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: 2rem;
 }
 
 .specimen-tile-shadow {
     position: absolute;
     z-index: 1;
-    transition: background-color .25s;
-    background: rgba(0,0,0,.05);
+    background: $specimen-tile-shadow-color;
+    box-shadow: 0 0 2px 1px $specimen-tile-shadow-color;
     display: block;
     opacity: 1;
-    margin: $specimen-tile-shadow-offset -$specimen-tile-shadow-offset -$specimen-tile-shadow-offset $specimen-tile-shadow-offset;
     border-radius: $specimen-tile-border-radius;
     top: 0; bottom: 0; left: 0; right: 0;
 }
@@ -43,21 +46,37 @@
 .specimen-tile-meta-category { color: $primary; }
 
 .specimen-tile-container {
-    .specimen-tile-meta,
+
+    margin: 2rem 1rem;
+
     .specimen-tile:after,
-    .specimen-tile-shadow { transition: opacity .25s; }
+    .specimen-tile-shadow {
+        transition-timing-function: cubic-bezier(1.0, 0.1, 0.1, 1.0);
+        transition: opacity .25s;
+    }
 
     @media (hover: hover) {
+        .specimen-tile-meta {
+            position: absolute;
+            bottom: 0;
+            left: 0; right: 0;
+            transition-timing-function: cubic-bezier(1.0, 0.1, 0.1, 1.0);
+            transition: opacity .25s, bottom .5s;
+        }
         &:not(:hover) {
             .specimen-tile-meta,
             .specimen-tile:after,
             .specimen-tile-shadow { opacity: 0; }
+
+            .specimen-tile-meta {
+                transition-timing-function: ease-in-out;
+                transition: opacity .15s, bottom .5s;
+                bottom: 10%;
+            }
         }
 
-        &:hover {
-            .specimen-tile-shadow { background: rgba(141,151,227,.25); }
-        }
     }
+
 }
 
 @media (hover: none) {
