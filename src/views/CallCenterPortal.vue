@@ -5,7 +5,7 @@
       <p class="is-family-sans-serif p-content mb-1">The goal of this project was to create an interface for call center agents by utilizing the codebase that had been serving offers for exclusively for web leads.</p>
       <p class="is-family-sans-serif p-content mb-1">The solution needed to allow call center agents to navigate the offers returned, submit multiple offers, see real-time offer submission statuses, and get quick visibility of pertinent information of each offer.
       <p class="is-family-sans-serif p-content mb-4">The completion of this project multiplied our revenue.</p>
-      <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)" class="is-full-width border-radius--3">
+      <ImageComponent :directory="specimen.slug" :image="specimen.images['featured']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
       <ul>
         <li class="mt-4">
           <h3 class="has-text-primary is-size-3">The Long Form</h3>

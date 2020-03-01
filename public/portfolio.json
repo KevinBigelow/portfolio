@@ -78,6 +78,7 @@
       "UI", "UX", "Python", "Django", "jQuery", "SCSS", "HTML"
     ],
     "images": {
+      "featured": {"name":  "featured", "sizes": [600, 1238, 2475], "extension": ".jpg", "alt": "Cropped screenshot of software displaying a long search form, a list of results and their status, and the active result's form."},
       "current": {"name":  "current", "sizes": [391, 782], "extension": ".png", "alt": "Close-up of result card indicating itself as the Current Offer."},
       "emptyState": {"name":  "emptyState", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": "Empty state of software, what the user sees before search is a 20 question form."},
       "feedback": {"name":  "feedback", "sizes": [453, 906], "extension": ".png", "alt": "Close-up image of 3 result cards. Each is highlighted to indicate a different state. Submission Pending, Offer Submitted, and Submission Declined."},
