@@ -1,15 +1,8 @@
 <template>
   <div class="view-content">
     <div class="columns is-0 is-variable is-tablet" v-if="portfolio">
-      <div class="column is-half-tablet">
-        <SpecimenTile :specimen="portfolio.NeutronWingSticker" :key="portfolio.NeutronWingSticker.slug"></SpecimenTile>
-        <SpecimenTile :specimen="portfolio.ProtonWatchlists" :key="portfolio.ProtonWatchlists.slug"></SpecimenTile>
-        <SpecimenTile :specimen="portfolio.WebDesignMarketingPamphlet" :key="portfolio.WebDesignMarketingPamphlet.slug"></SpecimenTile>
-
-      </div>
-      <div class="column is-half-tablet staggered-column">
-        <SpecimenTile :specimen="portfolio.CallCenterPortal" :key="portfolio.CallCenterPortal.slug"></SpecimenTile>
-        <SpecimenTile :specimen="portfolio.Fusion" :key="portfolio.Fusion.slug" class="specimen-tile-bg-top-left"></SpecimenTile>
+      <div class="specimen-grid">
+        <SpecimenTile v-for="specimen in portfolio" :specimen="specimen" :key="specimen.slug"/>
       </div>
     </div>
   </div>
@@ -54,4 +47,13 @@
 
 <style lang="scss">
   @import "../styles/components/specimen_tile";
+  .specimen-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 </style>
