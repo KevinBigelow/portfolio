@@ -74,6 +74,14 @@ export default new Router({
       }
     },
     {
+      path: '/kiyote-lms',
+      name: 'KiyoteLMS',
+      component: () => import('./views/KiyoteLMS.vue'),
+      meta: {
+        title: 'Kiyote LMS SaaS'
+      }
+    },
+    {
       path: '/*',
       component: () => import('./views/404.vue'),
       meta: {

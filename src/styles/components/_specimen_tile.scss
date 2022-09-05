@@ -3,7 +3,7 @@
     overflow: hidden;
     position: relative;
     z-index: 2;
-    min-height: 400px;
+    min-height: 300px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,9 +25,12 @@
         top: 0; bottom: 0; left: 0; right: 0;
     }
 
+    @media screen and (min-width: $desktop) {
+        min-height: 400px;
+    }
 }
 .specimen-tile-meta-wrap {
-    z-index: 1;
+    z-index: 3;
     top: 0; left: 0; right: 0; bottom: 0;
     margin: 2rem;
 }
@@ -35,19 +38,19 @@
 .specimen-tile-shadow {
     position: absolute;
     z-index: 1;
-    background: $specimen-tile-shadow-color;
+    border: 2px solid $primary-gradient-2;
     box-shadow: 0 0 2px 1px $specimen-tile-shadow-color;
     display: block;
     opacity: 1;
-    border-radius: $specimen-tile-border-radius;
-    top: 0; bottom: 0; left: 0; right: 0;
+    border-radius: $specimen-tile-outline-border-radius;
+    top: -10px; bottom: -10px; left: -10px; right: -10px;
 }
 
 .specimen-tile-meta-category { color: $primary; }
 
 .specimen-tile-container {
 
-    margin: 2rem 1rem;
+    margin: 1rem;
 
     .specimen-tile:after,
     .specimen-tile-shadow {
@@ -74,7 +77,10 @@
                 bottom: 10%;
             }
         }
+    }
 
+    @media screen and (min-width: $tablet) {
+        margin: 2rem;
     }
 
 }
