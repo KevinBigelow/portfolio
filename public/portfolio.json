@@ -1,15 +1,4 @@
 {
-  "KiyoteLMS": {
-    "slug": "KiyoteLMS",
-    "name": "Kiyote LMS",
-    "featured_image": {
-      "src": "featured.jpg",
-      "alt": "Screenshot of lead management system software"
-    },
-    "categories": [
-      "Project Management","Vue","Vuex","Tailwind","UI", "UX"
-    ]
-  },
   "Fusion": {
     "slug": "Fusion",
     "name": "Fusion Web App UI",
