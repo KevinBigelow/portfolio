@@ -3,7 +3,7 @@
     overflow: hidden;
     position: relative;
     z-index: 2;
-    min-height: 400px;
+    min-height: 300px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +25,9 @@
         top: 0; bottom: 0; left: 0; right: 0;
     }
 
+    @media screen and (min-width: $desktop) {
+        min-height: 400px;
+    }
 }
 .specimen-tile-meta-wrap {
     z-index: 3;
@@ -47,7 +50,7 @@
 
 .specimen-tile-container {
 
-    margin: 2rem;
+    margin: 1rem;
 
     .specimen-tile:after,
     .specimen-tile-shadow {
@@ -74,7 +77,10 @@
                 bottom: 10%;
             }
         }
+    }
 
+    @media screen and (min-width: $tablet) {
+        margin: 2rem;
     }
 
 }

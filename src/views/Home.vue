@@ -35,6 +35,7 @@
           })
           .catch(error => {
             this.errored = true
+            window.console.log(error)
           })
           .finally(() => this.loading = false);
       },
@@ -47,13 +48,5 @@
 
 <style lang="scss">
   @import "../styles/components/specimen_tile";
-  .specimen-grid {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-
-    @media screen and (min-width: $tablet) {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+  @import "../styles/components/specimen_grid";
 </style>

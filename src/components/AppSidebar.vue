@@ -1,7 +1,7 @@
 <template>
     <KinesisContainer class="app-navbar app-navbar-grid" tag="nav">
-        <h2 class="app-navbar--subtitle has-text-primary has-text-centered grid-title">UI Designer & Developer</h2>
-        <h1 class="app-navbar--title title has-text-centered has-text-white grid-name is-marginless">Kevin Bigelow</h1>
+        <h2 class="app-navbar--subtitle has-text-primary grid-title">UI Designer & Developer</h2>
+        <h1 class="app-navbar--title title has-text-white grid-name is-marginless">Kevin Bigelow</h1>
         <div class="grid-actions">
             <transition name="router-anim" enter-active-class="animated bounceIn delay-1s" leave-active-class="animated zoomOut">
                 <KinesisElement type="depth" :strength="8" v-if="is_home === 'false'">

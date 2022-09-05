@@ -23,6 +23,7 @@ body {
 
     @media screen and (min-width: $tablet) {
         padding: $layout-padding-sm;
+        padding-left: 0;
     }
 }
 
@@ -110,6 +111,7 @@ body {
 
     .app-navbar {
         width: $navbar-width--fullhd;
+        padding-left: 2rem;
     }
 
     .app-content {
