@@ -1,9 +1,14 @@
 .specimen-grid {
   width: 100%;
   display: grid;
+  grid-gap: 2.5rem;
   grid-template-columns: 1fr;
 
   @media screen and (min-width: $desktop) {
     grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (min-width: $fullhd) {
+    font-size: 115%;
+    grid-gap: 3rem;
   }
 }

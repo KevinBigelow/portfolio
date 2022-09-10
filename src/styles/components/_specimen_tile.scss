@@ -32,7 +32,7 @@
 .specimen-tile-meta-wrap {
     z-index: 3;
     top: 0; left: 0; right: 0; bottom: 0;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 .specimen-tile-shadow {
@@ -50,8 +50,6 @@
 
 .specimen-tile-container {
 
-    margin: 1rem;
-
     .specimen-tile:after,
     .specimen-tile-shadow {
         transition-timing-function: cubic-bezier(1.0, 0.1, 0.1, 1.0);
@@ -61,7 +59,7 @@
     @media (hover: hover) {
         .specimen-tile-meta {
             position: absolute;
-            bottom: 0;
+            bottom: 30%;
             left: 0; right: 0;
             transition-timing-function: cubic-bezier(1.0, 0.1, 0.1, 1.0);
             transition: opacity .25s, bottom .5s;
@@ -78,12 +76,11 @@
             }
         }
     }
-
-    @media screen and (min-width: $tablet) {
-        margin: 2rem;
-    }
-
 }
+
+.specimen-tile-meta-category,
+.specimen-tile-meta-title,
+.specimen-tile-meta-icon { color: $white; }
 
 @media (hover: none) {
     .specimen-tile-meta {
@@ -91,10 +88,6 @@
         background-color: $primary-gradient-1;
         background: linear-gradient(-45deg, $primary-gradient-1, $primary-gradient-2);
     }
-
-    .specimen-tile-meta-category,
-    .specimen-tile-meta-title,
-    .specimen-tile-meta-icon { color: $white; }
 
     .specimen-tile:after,
     .specimen-tile-shadow { opacity: 0; }
