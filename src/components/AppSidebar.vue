@@ -7,7 +7,7 @@
                 <KinesisElement type="depth" :strength="9">
                     <a :href="baseUrl + 'kevinbigelow_resume_8-18-22.pdf'"
                        target="_blank"
-                       class="app-navbar--button button is-layered is-primary-gradient is-primary is-large is-margin-centered is-block"><font-awesome-icon class="mr-1" :icon="['far', 'file-pdf']" /> Résumé</a>
+                       class="app-navbar--button button is-layered is-primary-gradient is-primary is-medium is-margin-centered is-block"><font-awesome-icon class="mr-1" :icon="['far', 'file-pdf']" /> Résumé</a>
                 </KinesisElement>
             </transition>
         </div>
