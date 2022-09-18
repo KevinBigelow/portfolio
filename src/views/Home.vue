@@ -1,6 +1,6 @@
 <template>
   <div class="view-content">
-    <div class="columns is-0 is-variable is-tablet" v-if="portfolio">
+    <div class="is-0 is-variable is-tablet" v-if="portfolio">
       <div class="specimen-grid">
         <SpecimenTile v-for="specimen in portfolio" :specimen="specimen" :key="specimen.slug"/>
       </div>

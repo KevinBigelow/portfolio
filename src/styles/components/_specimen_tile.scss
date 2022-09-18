@@ -19,7 +19,7 @@
         position: absolute;
         z-index: 0;
         display: block;
-        opacity: .85;
+        opacity: .9;
         background-color: $primary-gradient-1;
         background: linear-gradient(-45deg, $primary-gradient-1, $primary-gradient-2);
         top: 0; bottom: 0; left: 0; right: 0;
@@ -72,7 +72,7 @@
             .specimen-tile-meta {
                 transition-timing-function: ease-in-out;
                 transition: opacity .15s, bottom .5s;
-                bottom: 10%;
+                bottom: 20%;
             }
         }
     }

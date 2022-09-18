@@ -7,10 +7,18 @@ import VueLazyload from 'vue-lazyload'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFilePdf } from '@fortawesome/free-regular-svg-icons'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faExternalLink } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faFilePdf, faArrowLeft, faLinkedin, faMedium, faGithub)
+library.add(
+    faArrowLeft,
+    faExternalLink,
+    faFilePdf,
+    faGithub,
+    faLinkedin,
+    faMedium
+)
+
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(VueLazyload, {

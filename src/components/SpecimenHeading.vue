@@ -8,7 +8,10 @@
 <script>
   export default {
     props: {
-      specimen: {}
+      specimen: {
+        type: Object,
+        required: true
+      }
     }
   }
 </script>
