@@ -1,7 +1,7 @@
 <template>
     <KinesisContainer tag="nav">
-        <KinesisElement type="depth" :strength="9">
-            <a :href="url" :target="target" class="flex--column flex-center-center is-family-sans-serif hollow-card has-text-centered has-text-white">
+        <KinesisElement type="rotate" :strength="5">
+            <a :href="url" :target="target" class="flex--column flex-center-center is-family-sans-serif hollow-card has-text-centered is-size-5 has-text-white">
                 <font-awesome-icon icon="external-link" class="has-text-grey is-size-4"/>
                 <span class="is-underlined mt-2">{{ title }}</span>
             </a>

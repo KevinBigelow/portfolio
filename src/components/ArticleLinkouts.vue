@@ -1,7 +1,7 @@
 <template>
-    <div class="container article-grid">
+    <div class="article-grid">
+        <h3 class="article-linkout-heading has-text-centered is-size-3 flex--column flex-center-center"><font-awesome-icon :icon="['far', 'file-lines']"/><span>Check out these "how-to" articles I wrote</span></h3>
         <article-link v-for="article in articles"
-                      class="is-flex-grow-1"
                       :key="article.url"
                       :url="article.url"
                       target="_blank"
@@ -38,15 +38,36 @@ export default {
 </script>
 
 <style lang="scss">
+
     .article-grid {
+        z-index: 1;
+        position: relative;
         width: 100%;
-        margin: 5rem 0;
-        padding: 1rem 3rem;
+        padding: 3rem 0;
+        margin: 3rem 0;
         display: grid;
         gap: 2rem;
+        align-items: center;
         grid-template-columns: 1fr;
         @media screen and (min-width: $tablet) {
+            grid-template-areas: "title title title";
+            grid-template-rows: 100px 1fr;
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        &:before {
+            content: '';
+            background: #11111A;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 2rem;
+            left: 2rem;
+            border-radius: $border-radius-20;
+        }
+        .article-linkout-heading {
+            margin: -2rem 0 0 0;
+            z-index: 2;
+            grid-area: title;
         }
     }
 </style>
