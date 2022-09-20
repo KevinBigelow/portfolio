@@ -38,7 +38,8 @@
 .specimen-tile-shadow {
     position: absolute;
     z-index: 1;
-    border: 2px solid $primary-gradient-2;
+    background: $specimen-tile-shadow-color;
+    border: 2px solid $primary;
     box-shadow: 0 0 2px 1px $specimen-tile-shadow-color;
     display: block;
     opacity: 1;

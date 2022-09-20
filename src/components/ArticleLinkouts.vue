@@ -1,12 +1,12 @@
 <template>
-    <KinesisContainer class="container article-grid">
+    <div class="container article-grid">
         <article-link v-for="article in articles"
                       class="is-flex-grow-1"
                       :key="article.url"
                       :url="article.url"
                       target="_blank"
                       :title="article.title"/>
-    </KinesisContainer>
+    </div>
 </template>
 
 <script>
