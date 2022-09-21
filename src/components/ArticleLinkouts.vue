@@ -1,6 +1,6 @@
 <template>
     <div class="article-grid">
-        <h3 class="article-linkout-heading has-text-centered is-size-3 flex--column flex-center-center"><font-awesome-icon :icon="['far', 'file-lines']"/><span>Check out these "how-to" articles I wrote</span></h3>
+        <h3 class="article-linkout-heading has-text-centered is-size-3 flex--column flex-center-center"><font-awesome-icon :icon="['far', 'file-lines']"/><span>Check out these articles I wrote</span></h3>
         <article-link v-for="article in articles"
                       :key="article.url"
                       :url="article.url"
@@ -46,7 +46,7 @@ export default {
         padding: 3rem 0;
         margin: 3rem 0;
         display: grid;
-        gap: 2rem;
+        grid-column-gap: 2rem;
         align-items: center;
         grid-template-columns: 1fr;
         @media screen and (min-width: $tablet) {
