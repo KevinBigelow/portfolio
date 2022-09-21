@@ -4,6 +4,7 @@
       <div class="specimen-grid">
         <SpecimenTile v-for="specimen in portfolio" :specimen="specimen" :key="specimen.slug"/>
       </div>
+      <article-linkouts/>
     </div>
   </div>
 </template>

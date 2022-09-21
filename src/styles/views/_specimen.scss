@@ -4,5 +4,9 @@
 
     @media screen and (min-width: $tablet) {
         padding: $layout-padding-md;
+        padding-bottom: 0;
+    }
+    @media screen and (min-width: $widescreen){
+        padding-left: 1rem;
     }
 }

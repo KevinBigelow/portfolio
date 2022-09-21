@@ -1,7 +1,9 @@
 <template>
-    <router-link v-if="is_home === 'false'" :to="{name: 'home'}" class="has-text-white is-block sticky-navbar">
-        <font-awesome-icon icon="arrow-left" class="icon"/> View all Work
-    </router-link>
+    <div class="is-block sticky-navbar" v-if="is_home === 'false'">
+        <router-link :to="{name: 'home'}" class="has-text-white">
+            <font-awesome-icon icon="arrow-left" class="icon"/> View all Work
+        </router-link>
+    </div>
 </template>
 
 <script>
@@ -28,18 +30,23 @@ export default {
 <style lang="scss">
 .sticky-navbar {
     font-size: 2rem;
+    height: 2rem;
     position: fixed;
     display: block;
     right: 0;
-    top: 0;
+    bottom: 0;
     width: 100%;
     padding: 1rem 2rem 2rem;
     text-align: right;
-    background: linear-gradient(to bottom, rgba(6, 6, 16, .9), rgba(6, 6, 16, 0));
+    background: linear-gradient(to top, rgba(6, 6, 16, .9), rgba(6, 6, 16, 0));
     &:hover {
         .icon {
             margin-right: .125rem;
         }
+    }
+    @media screen and (min-width: $widescreen) {
+        top: 0;
+        background: linear-gradient(to bottom, rgba(6, 6, 16, .9), rgba(6, 6, 16, 0));
     }
 }
 </style>

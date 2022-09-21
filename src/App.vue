@@ -2,11 +2,10 @@
   <div id="app" class="app-layout is-relative animated fadeIn delay-1s">
     <app-sidebar/>
     <article class="app-content view-content is-relative">
-      <app-topbar/>
+      <return-home/>
       <transition @before-enter="beforeEnter" mode="out-in" name="router-anim" enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster">
         <router-view/>
       </transition>
-      <ArticleLinkouts class="is-col-span-2"/>
     </article>
   </div>
 </template>
@@ -18,8 +17,7 @@
 
 <script>
   import appSidebar from './components/AppSidebar.vue'
-  import appTopbar from './components/AppTopbar.vue'
-  import ArticleLinkouts from './components/ArticleLinkouts'
+  import returnHome from './components/ReturnHome.vue'
 
   export default {
     methods: {
@@ -28,7 +26,7 @@
       }
     },
     components: {
-      appSidebar, appTopbar, ArticleLinkouts
+      appSidebar, returnHome
     },
   }
 </script>

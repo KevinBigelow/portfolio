@@ -10,6 +10,8 @@ import { faFilePdf, faFileLines } from '@fortawesome/free-regular-svg-icons'
 import { faArrowLeft, faExternalLink } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons'
 
+import ArticleLinkouts from './components/ArticleLinkouts'
+
 library.add(
     faArrowLeft,
     faExternalLink,
@@ -21,6 +23,7 @@ library.add(
 )
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+Vue.component('article-linkouts', ArticleLinkouts)
 
 Vue.use(VueLazyload, {
   loading: '/images/loading.gif',

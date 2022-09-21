@@ -1,5 +1,5 @@
 <template>
-    <div class="level-item has-text-centered">
+    <div class="has-text-centered">
         <a :href="url" target="_blank" class="is-size-3 icon-button">
             <font-awesome-icon :icon="['fab', icon]" />
         </a>
@@ -31,6 +31,7 @@
 <style lang="scss">
 .icon-button {
     color: $grey-lightest;
+    transition: color .25s;
     &:hover {
         color: $primary;
     }
