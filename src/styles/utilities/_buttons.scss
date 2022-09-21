@@ -56,6 +56,9 @@ $layered-button-shim: 6px;
         }
     }
 }
+.button.is-layered.is-fixed {
+    position: fixed;
+}
 
 .button.is-layered.is-medium {
     width: 9rem;

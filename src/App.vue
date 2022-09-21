@@ -2,7 +2,7 @@
   <div id="app" class="app-layout is-relative animated fadeIn delay-1s">
     <app-sidebar/>
     <article class="app-content view-content is-relative">
-      <transition name="router-anim" enter-active-class="animated bounceInDown delay-1s" leave-active-class="animated bounceOutUp">
+      <transition name="router-anim" enter-active-class="animated bounceInRight delay-1s" leave-active-class="animated bounceOutRight">
         <return-home v-if="is_home === 'false'"/>
       </transition>
       <transition @before-enter="beforeEnter" mode="out-in" name="router-anim" enter-active-class="animated fadeIn faster" leave-active-class="animated fadeOut faster">
