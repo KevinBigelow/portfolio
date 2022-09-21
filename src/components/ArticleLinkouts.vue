@@ -38,7 +38,10 @@ export default {
 </script>
 
 <style lang="scss">
-
+    .article-linkout-heading {
+        margin: -2rem 0 0 0;
+        z-index: 2;
+    }
     .article-grid {
         z-index: 1;
         position: relative;
@@ -46,14 +49,8 @@ export default {
         padding: 3rem 0;
         margin: 3rem 0;
         display: grid;
-        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
         align-items: center;
-        grid-template-columns: 1fr;
-        @media screen and (min-width: $tablet) {
-            grid-template-areas: "title title title";
-            grid-template-rows: 100px 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
         &:before {
             content: '';
             background: #11111A;
@@ -64,10 +61,15 @@ export default {
             left: 2rem;
             border-radius: $border-radius-20;
         }
-        .article-linkout-heading {
-            margin: -2rem 0 0 0;
-            z-index: 2;
-            grid-area: title;
+        @media screen and (min-width: $tablet) {
+            grid-template-areas: "title title title";
+            grid-column-gap: 2rem;
+            grid-row-gap: 0;
+            grid-template-rows: 100px 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            .article-linkout-heading {
+                grid-area: title;
+            }
         }
     }
 </style>

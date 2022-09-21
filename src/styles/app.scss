@@ -23,7 +23,6 @@ body {
 
     @media screen and (min-width: $tablet) {
         padding: $layout-padding-sm;
-        padding-left: 0;
     }
 }
 
@@ -32,12 +31,12 @@ body {
     background: $content-background-color;
 }
 
-.view-content {
-    max-width: 1600px;
-}
-
 .app-navbar {
     background: $navbar-background-color;
+}
+
+.view-content {
+    max-width: 1600px;
 }
 
 .app-navbar-grid {
@@ -104,6 +103,7 @@ body {
 
     .app-content {
         margin-left: $navbar-width--widescreen;
+        padding-left: 0;
     }
 }
 
