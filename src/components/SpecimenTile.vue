@@ -13,11 +13,13 @@
         </div>
       </div>
     </router-link>
-    <KinesisElement type="translate" :strength="4">
+    <KinesisElement :strength="4">
       <div class="specimen-tile flex align-items--end justify-content--center box-shadow--gray-light"
                    :style="{'background-image': 'url(' + require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`) + ')'}"></div>
-      <KinesisElement :strength="-10" class="specimen-tile-shadow"></KinesisElement>
-      <KinesisElement :strength="10" class="specimen-tile-shadow"></KinesisElement>
+      <KinesisElement type="depth" :strength="-10" class="specimen-tile-shadow"></KinesisElement>
+      <KinesisElement type="depth" :strength="10" class="specimen-tile-shadow"></KinesisElement>
+      <KinesisElement type="depth" :strength="15" class="specimen-tile-shadow"></KinesisElement>
+      <KinesisElement type="depth" :strength="-15" class="specimen-tile-shadow"></KinesisElement>
     </KinesisElement>
   </KinesisContainer>
 </template>
