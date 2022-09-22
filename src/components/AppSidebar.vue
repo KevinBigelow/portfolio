@@ -1,40 +1,30 @@
 <template>
-    <KinesisContainer class="app-navbar app-navbar-grid" tag="nav">
-        <h2 class="app-navbar--subtitle has-text-primary grid-title">UI Designer & Developer</h2>
-        <h1 class="app-navbar--title title has-text-white grid-name is-marginless">Kevin Bigelow</h1>
+    <KinesisContainer class="app-navbar app-navbar-grid" tag="nav" type="depth">
+        <h2 class="app-navbar--subtitle has-text-primary grid-title">UI Engineer</h2>
+        <h1 class="app-navbar--title title has-text-white grid-name is-marginless"><router-link :to="{name: 'home'}" class="has-text-white">Kevin Bigelow</router-link></h1>
         <div class="grid-actions">
-            <transition name="router-anim" enter-active-class="animated bounceIn delay-1s" leave-active-class="animated zoomOut">
-                <KinesisElement type="depth" :strength="8" v-if="is_home === 'false'">
-                    <router-link :to="{name: 'home'}" class="app-navbar--button button is-layered is-primary-gradient is-primary is-medium is-margin-centered is-block">View all Work</router-link>
-                </KinesisElement>
-            </transition>
+            <KinesisElement type="depth" :strength="9">
+                <a :href="baseUrl + 'kevinbigelow_resume.pdf'"
+                   target="_blank"
+                   class="app-navbar--button button is-layered is-primary-gradient is-primary is-medium is-margin-centered is-block"><font-awesome-icon class="mr-1" :icon="['far', 'file-pdf']" /> Résumé</a>
+            </KinesisElement>
         </div>
-        <span class="grid-contact bizarro-text has-text-white">moc.liamg@ngised.wolegibnivek</span>
+        <contact-details class="grid-contact"/>
     </KinesisContainer>
 </template>
 
 <script>
+    import ContactDetails from "./ContactDetails";
     import { KinesisContainer, KinesisElement } from 'vue-kinesis'
 
     export default {
-        data() {
+        data () {
             return {
-                is_home: ''
+                baseUrl: process.env.VUE_APP_BASE_URL
             }
         },
-        watch: {
-            $route (to) {
-                document.title = to.meta.title || 'Portfolio by Kevin Bigelow';
-                if (this.$route.name === "home") {
-                    this.is_home = 'true'
-                } else {
-                    this.is_home = 'false'
-                }
-            },
-            immediate: true
-        },
         components: {
-            KinesisContainer, KinesisElement
+            KinesisContainer, KinesisElement, ContactDetails
         }
     }
 </script>

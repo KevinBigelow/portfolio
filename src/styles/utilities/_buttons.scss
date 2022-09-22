@@ -10,7 +10,7 @@
 /* Layered Button
 ---------------------------------------------------- */
 
-$layered-button-shim: 5px;
+$layered-button-shim: 6px;
 
 // Override default button
 .button.is-layered,
@@ -35,6 +35,7 @@ $layered-button-shim: 5px;
         height: inherit;
         top: 0;
         left: 0;
+        border-radius: 5px;
         content: '';
     }
 
@@ -54,6 +55,9 @@ $layered-button-shim: 5px;
             transform: translate(-#{$layered-button-shim}, -#{$layered-button-shim});
         }
     }
+}
+.button.is-layered.is-fixed {
+    position: fixed;
 }
 
 .button.is-layered.is-medium {

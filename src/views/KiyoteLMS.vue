@@ -3,6 +3,7 @@
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <p class="is-family-sans-serif p-content mb-1">Kiyote! Victory for all</p>
+      <article-linkouts/>
     </article>
   </div>
 </template>

@@ -59,6 +59,7 @@
           </div>
         </li>
       </ul>
+      <article-linkouts/>
     </article>
   </div>
 </template>

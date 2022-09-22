@@ -29,6 +29,7 @@
           <ImageComponent :directory="specimen.slug" :image="specimen.images['analyticsSourcePage']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
         </li>
       </ul>
+      <article-linkouts/>
     </article>
   </div>
 </template>

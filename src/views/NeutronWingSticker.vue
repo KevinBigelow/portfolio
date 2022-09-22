@@ -9,6 +9,7 @@
         <ImageComponent :directory="specimen.slug" :image="specimen.images['artBack']" class="is-full-width mb-4 mt-4"></ImageComponent>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['stackPlusBack']" class="is-full-width mb-3 mt-4"></ImageComponent>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['fullFront']" class="is-full-width mb-3"></ImageComponent>
+      <article-linkouts/>
     </article>
   </div>
 </template>

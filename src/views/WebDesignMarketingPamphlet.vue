@@ -10,6 +10,7 @@
            v-lazy="getImgSrc(specimen.slug, index + '--' + data['sizes'][0] + data['extension'])"
            :alt="data['alt']"
            class="is-full-width mb-3">
+      <article-linkouts/>
     </article>
   </div>
 </template>
