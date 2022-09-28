@@ -3,18 +3,36 @@
     "slug": "KiyoteLMS",
     "name": "Kiyote LMS",
     "featured_image": {
-      "src": "featured.jpg",
+      "src": "featured-kiyote.png",
       "alt": "Screenshot of lead management system software"
     },
     "categories": [
       "Project Management","Vue","Vuex","Tailwind","UI", "UX"
     ]
   },
+  "CallCenterPortal": {
+    "slug": "CallCenterPortal",
+    "name": "Call Center Offer Interface",
+    "featured_image": {
+      "src": "featured-apexilo.png",
+      "alt": "Screenshot of software"
+    },
+    "categories": [
+      "UI", "UX", "Python", "Django", "jQuery", "SCSS", "HTML"
+    ],
+    "images": {
+      "current": {"name":  "current", "sizes": [391, 782], "extension": ".png", "alt": ""},
+      "emptyState": {"name":  "emptyState", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": ""},
+      "feedback": {"name":  "feedback", "sizes": [453, 906], "extension": ".png", "alt": ""},
+      "results": {"name":  "results", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": ""},
+      "toggle": {"name":  "toggle", "sizes": [382, 764], "extension": ".png", "alt": ""}
+    }
+  },
   "Fusion": {
     "slug": "Fusion",
-    "name": "Fusion Web App UI",
+    "name": "Fusion SaaS Web App",
     "featured_image": {
-      "src": "featured-2400.jpg",
+      "src": "featured-fusion.png",
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
@@ -32,29 +50,11 @@
       "updatePassword": {"name": "updatePassword", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""}
     }
   },
-  "CallCenterPortal": {
-    "slug": "CallCenterPortal",
-    "name": "Call Center Offer Interface",
-    "featured_image": {
-      "src": "featured.jpg",
-      "alt": "Screenshot of software"
-    },
-    "categories": [
-      "UI", "UX", "Python", "Django", "jQuery", "SCSS", "HTML"
-    ],
-    "images": {
-      "current": {"name":  "current", "sizes": [391, 782], "extension": ".png", "alt": ""},
-      "emptyState": {"name":  "emptyState", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": ""},
-      "feedback": {"name":  "feedback", "sizes": [453, 906], "extension": ".png", "alt": ""},
-      "results": {"name":  "results", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": ""},
-      "toggle": {"name":  "toggle", "sizes": [382, 764], "extension": ".png", "alt": ""}
-    }
-  },
   "WebDesignMarketingPamphlet": {
     "slug": "WebDesignMarketingPamphlet",
     "name": "Web Design Marketing Pamphlet",
     "featured_image": {
-      "src": "featured.jpg",
+      "src": "featured-pamphlet.png",
       "alt": "Featured page from pamphlet"
     },
     "categories": [

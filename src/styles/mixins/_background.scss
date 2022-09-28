@@ -1,0 +1,6 @@
+
+@mixin purpleBgGlow {
+  display: block;
+  background: $specimen-tile-shadow-color;
+  box-shadow: 0 0 2px 1px $specimen-tile-shadow-color;
+}

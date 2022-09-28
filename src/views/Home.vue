@@ -48,6 +48,5 @@
 </script>
 
 <style lang="scss">
-  @import "../styles/components/specimen_tile";
   @import "../styles/components/specimen_grid";
 </style>
