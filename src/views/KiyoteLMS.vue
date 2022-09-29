@@ -2,7 +2,47 @@
   <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
-      <p class="is-family-sans-serif p-content mb-1">Kiyote! Victory for all</p>
+      <heading-tag class="has-text-gray-mid" :level="3">What is Kiyote:</heading-tag>
+      <paragraph-tag>Kiyote is a Lead Management SaaS product designed to scale across any vertical.</paragraph-tag>
+      <paragraph-tag>Companies who use Kiyote are able to build out offers with a robust set of properties. Those properties determine which offers our system will return from Kiyote’s search API.</paragraph-tag>
+      <paragraph-tag>The system has high coverage for testing a lead's likelihood of selling, and provides visibility into each stage a lead passes through during its lifecycle.</paragraph-tag>
+      <heading-tag class="has-text-gray-mid" :level="3">Tools:</heading-tag>
+      <ul>
+        <list-item>VueJs</list-item>
+        <list-item>Vuex</list-item>
+        <list-item>Axios to interact with the backend (Django REST Framework)</list-item>
+        <list-item>TailwindCss</list-item>
+        <list-item>Vee-Validate</list-item>
+      </ul>
+      <figure class="image is-128x128">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+      <heading-tag class="has-text-gray-mid" :level="3">What I Did:</heading-tag>
+      <paragraph-tag>I hired, trained, and led the frontend team (2 reports) as we built Kiyote from the ground up. For each feature that I assigned I would prepare a brief which often included a mockup or prototype, we would talk through methods of implementation in whatever depth was necessary.</paragraph-tag>
+      <paragraph-tag>My role didn’t preclude me from working in the trenches, I worked alongside my reports, each of us responsible for building our own features.</paragraph-tag>
+
+      <figure class="image is-128x128">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+      <paragraph-tag>In addition to leading the planning and development of features I was responsible for Kiyote’s UI design.</paragraph-tag>
+      <paragraph-tag>To achieve a cohesive look and feel I created the base reusable base components like buttons, tables, pagination, tabs, panels, tooltips, form fields, and modals utilizing the Tailwind CSS framework.</paragraph-tag>
+
+      <figure class="image is-128x128">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+
+      <heading-tag class="has-text-gray-mid" :level="3">The Branding:</heading-tag>
+      <paragraph-tag>The logo and visual identity was also my responsibility. A variety of discussions and design critiques brought me to this solution for the logo.</paragraph-tag>
+
+      <figure class="image is-128x128">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+
+      <paragraph-tag>It also looks quite snazzy in holofoil.</paragraph-tag>
+      <figure class="image is-128x128">
+        <img src="https://bulma.io/images/placeholders/128x128.png">
+      </figure>
+
       <article-linkouts/>
     </article>
   </div>
