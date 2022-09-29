@@ -1,6 +1,6 @@
 <template>
     <KinesisContainer class="has-text-centered icon-wrap">
-        <KinesisElement type="rotate">
+        <KinesisElement type="depth">
             <a :href="url" target="_blank" class="icon-button">
                 <font-awesome-icon :icon="['fab', icon]" class="icon"/>
             </a>

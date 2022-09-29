@@ -1,7 +1,7 @@
 <template>
   <KinesisContainer class="is-relative specimen-tile-container">
     <router-link :to="{name: specimen.slug, params: {slug: specimen.slug}}" class="specimen-link"></router-link>
-    <KinesisElement :strength="8" type="depth">
+    <KinesisElement :strength="5" type="depth">
       <div class="specimen-tile"
                    :style="{'background-image': 'url(' + require(`@/assets/${specimen.slug}/${specimen.featured_image.src}`) + ')'}">
       </div>
