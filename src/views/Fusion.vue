@@ -17,15 +17,15 @@
         </ul>
       </div>
       <div class="mt-4">
-        <heading-tag class="has-text-gray-mid" :level="3">Table Views</heading-tag>
-        <paragraph-tag>The interface leverages a large amount of tables when presenting data.</paragraph-tag>
-        <ImageComponent :directory="specimen.slug" :image="specimen.images['analyticsSourcePage']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
-      </div>
-      <div class="mt-4">
         <heading-tag class="has-text-gray-mid" :level="3">Call Recording Page:</heading-tag>
         <paragraph-tag>This page gives visibility into the file’s reconciliation process allowing the user to view and correct any issues.</paragraph-tag>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['reconciliationFail']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['reconciliationSuccess']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
+      </div>
+      <div class="mt-4">
+        <heading-tag class="has-text-gray-mid" :level="3">Table Views</heading-tag>
+        <paragraph-tag>The interface leverages a large amount of tables when presenting data.</paragraph-tag>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['analyticsSourcePage']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
       </div>
       <div class="mt-4">
         <heading-tag class="has-text-gray-mid" :level="3">Auth Pages</heading-tag>

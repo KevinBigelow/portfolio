@@ -18,7 +18,7 @@
       "alt": "Screenshot of software"
     },
     "categories": [
-      "UI", "UX", "Python", "Django", "jQuery", "SCSS", "HTML"
+      "Frontend", "UI Design", "Backend"
     ],
     "images": {
       "current": {"name":  "current", "sizes": [391, 782], "extension": ".png", "alt": ""},
@@ -58,7 +58,7 @@
       "alt": "Featured page from pamphlet"
     },
     "categories": [
-      "Graphic Design", "Information Architecture"
+      "Graphic Design"
     ],
     "images": {
       "cover": {"sizes": [600, 1000, 2108, 3648], "extension": ".jpg", "alt": "Pamphlet cover, which reads: It's time for a new website, and we can help."},

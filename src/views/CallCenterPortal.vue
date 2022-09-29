@@ -2,43 +2,44 @@
   <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
-      <p class="is-family-sans-serif p-content mb-1">The goal of this project was to create an interface for call center agents by utilizing the codebase that had been serving offers for exclusively for web leads.</p>
-      <p class="is-family-sans-serif p-content mb-1">The solution needed to allow call center agents to navigate the offers returned, submit multiple offers, see real-time offer submission statuses, and get quick visibility of pertinent information of each offer.
-      <p class="is-family-sans-serif p-content mb-4">The completion of this project multiplied our revenue.</p>
-      <img :src="getImgSrc(specimen.slug, specimen.featured_image.src)" class="is-full-width border-radius--3">
+      <heading-tag class="has-text-gray-mid" :level="3">What it is:</heading-tag>
+      <paragraph-tag>A web interface built for call center agents. It was designed to allow call center agents to browse and submit offers returned by several different API. The agents needed to see real-time offer submission statuses, and get quick visibility of information returned with each offer.</paragraph-tag>
+      <paragraph-tag>The completion of this project directly improved our revenue.</paragraph-tag>
+      <heading-tag class="has-text-gray-mid" :level="3">Tools:</heading-tag>
       <ul>
-        <li class="mt-4">
-          <h3 class="has-text-primary is-size-3">The Long Form</h3>
-          <p class="is-family-sans-serif p-content mb-1">The starting point for any call center agent is the long form displayed below.</p>
-          <p class="is-family-sans-serif p-content mb-1">It contains fields shared by all offer forms, which eliminates duplicated work when submitting multiple offers.</p>
-          <p class="is-family-sans-serif p-content mb-1">It also provides the call center agent visibility into all fields pre-populated by the GET request parameters.</p>
-          <ImageComponent :directory="specimen.slug" :image="specimen.images['emptyState']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
-        </li>
-        <li class="mt-4">
-          <h3 class="has-text-primary is-size-3">Search Results</h3>
-          <p class="is-family-sans-serif p-content mb-1">Our system returns as many offers match the parameters and opens the top result by default.</p>
-          <ImageComponent :directory="specimen.slug" :image="specimen.images['results']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
-        </li>
-        <li class="mt-4 flex blurb-with-image">
-          <div>
-            <h3 class="has-text-primary is-size-3">Program List Toggle</h3>
-            <p class="is-family-sans-serif mb-1">Sometimes offers have more than one program option in its form.</p>
-            <p class="is-family-sans-serif mb-1">If that is the case the call center agent is able to toggle open a list of the available programs without digging into the form.</p>
-          </div>
-          <div class="ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['toggle']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
-          </div>
-        </li>
-        <li class="mt-4 flex blurb-with-image">
-          <div>
-            <h3 class="has-text-primary is-size-3">Instant Feedback</h3>
-            <p class="is-family-sans-serif mb-1">Call center agents need to move quickly through offers. Seeing the current state of previously submitted offers allows the agents to move onto the next offer quickly.</p>
-          </div>
-          <div class="ph-1">
-            <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
-          </div>
-        </li>
+        <list-item>jQuery / Javascript</list-item>
+        <list-item>Django / Python</list-item>
+        <list-item>Bootstrap</list-item>
       </ul>
+      <div class="mt-4">
+        <heading-tag class="has-text-gray-mid" :level="3">What I Did:</heading-tag>
+        <paragraph-tag>I built it on top of our existing backend system which already populated the web traffic side of our business.</paragraph-tag>
+        <paragraph-tag>In addition to designing and building the frontend interface, I improved how we parsed and returned data from different APIs to be more consistent on the backend.</paragraph-tag>
+      </div>
+      <div class="mt-4">
+        <heading-tag class="has-text-gray-mid" :level="3">The Long Form:</heading-tag>
+        <paragraph-tag>This form contains fields known to be shared by multiple APIs. Making the form large upfront eliminated duplicated work when agents needed to submit multiple offers.</paragraph-tag>
+        <paragraph-tag>All fields could be pre-populated by GET parameters.</paragraph-tag>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['results']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
+      </div>
+      <div class="mt-4 flex blurb-with-image">
+        <div>
+          <heading-tag class="has-text-gray-mid" :level="3">Program List Toggle</heading-tag>
+          <paragraph-tag>If offers have more than one program option in its form, agents could quickly preview the options with this UI affordance.</paragraph-tag>
+        </div>
+        <div class="ph-1">
+          <ImageComponent :directory="specimen.slug" :image="specimen.images['toggle']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
+        </div>
+      </div>
+      <div class="mt-4 flex blurb-with-image">
+        <div>
+          <heading-tag class="has-text-gray-mid" :level="3">Instant Feedback</heading-tag>
+          <paragraph-tag>Allowing the agent to see offer submission statuses helps them determine whether to make any corrections on a submission, or pursue another offer that matches their client’s needs.</paragraph-tag>
+        </div>
+        <div class="ph-1">
+          <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
+        </div>
+      </div>
       <article-linkouts/>
     </article>
   </div>
