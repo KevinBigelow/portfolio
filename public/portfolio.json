@@ -7,7 +7,7 @@
       "alt": "Screenshot of lead management system software"
     },
     "categories": [
-      "Frontend", "UI/UX", "Team Leadership"
+      "Frontend", "UI Design", "Team Leadership"
     ]
   },
   "CallCenterPortal": {
@@ -36,7 +36,7 @@
       "alt": "Stack of Neutron wing stickers"
     },
     "categories": [
-      "UI", "UX", "Python", "Django", "jQuery", "SCSS", "HTML"
+      "Frontend", "UI Design"
     ],
     "images": {
       "analyticsSourcePage": {"name": "analyticsSourcePage", "sizes": [600, 1000, 2200, 3360], "extension": ".jpg", "alt": ""},

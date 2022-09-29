@@ -2,36 +2,34 @@
   <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
-      <p class="is-family-sans-serif p-content mb-1">Leads generated through a call center have a correlating call recording file, which is used for legal and quality assurance reasons. Each call recording file typically needs to be renamed, stored, and delivered to various API endpoints.</p>
-      <p class="is-family-sans-serif p-content mb-1">Many lead generators often rename their files manually for each of their clients, and organize their files with excel spreadsheets. At a high volume this is unsustainable.</p>
-      <p class="is-family-sans-serif p-content mb-4">We built Fusion for our internal needs — it was designed and marketed as a SaaS product.</p>
-      <ImageComponent :directory="specimen.slug" :image="specimen.images['reconciliationSuccessCropped']" class="is-full-width border-radius--3 box-shadow--gray"></ImageComponent>
+      <heading-tag class="has-text-gray-mid" :level="3">What is Fusion:</heading-tag>
+      <paragraph-tag>Leads generated through a call center require a call recording file to be saved and managed for legal and quality assurance reasons. Each call recording file typically needs to be renamed, stored, and delivered to various API endpoints.</paragraph-tag>
       <div class="mt-4">
-        <h3 class="has-text-primary is-size-2 mb-1">Tools</h3>
-        <ul>
-          <li>Django / Python</li>
-          <li>Bootstrap</li>
-          <li>jQuery / Javascript</li>
-        </ul>
-        <h3 class="has-text-primary is-size-2 mb-1">What I Did</h3>
-        <p class="is-family-sans-serif p-content mb-1">I designed the user interface, engineered the front-end of the application, and directed the graphic design intern in creating the custom app icons and logo.</p>
-        <p class="is-family-sans-serif p-content mb-1">The result was a persistent layout, intuitive navigation and forms, a delightful personality, and another fulfilled deadline.</p>
+        <heading-tag class="has-text-gray-mid" :level="3">What I Did:</heading-tag>
+        <paragraph-tag>I designed the user interface, engineered the frontend of the web application, and directed the graphic design intern in creating the custom app icons and logo.</paragraph-tag>
       </div>
       <div class="mt-4">
-        <h3 class="has-text-primary is-size-2 mb-1">Call Recording Page</h3>
-        <p class="is-family-sans-serif p-content mb-1">This page gives visibility into the file’s reconciliation process.</p>
-        <p class="is-family-sans-serif p-content mb-1">The main goal of this page is to display the data reaped from each stage to make it easy to scan.</p>
+        <heading-tag class="has-text-gray-mid" :level="3">Tools:</heading-tag>
+        <ul>
+          <list-item>jQuery / Javascript</list-item>
+          <list-item>Django / Python</list-item>
+          <list-item>Bootstrap</list-item>
+        </ul>
+      </div>
+      <div class="mt-4">
+        <heading-tag class="has-text-gray-mid" :level="3">Table Views</heading-tag>
+        <paragraph-tag>The interface leverages a large amount of tables when presenting data.</paragraph-tag>
+        <ImageComponent :directory="specimen.slug" :image="specimen.images['analyticsSourcePage']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
+      </div>
+      <div class="mt-4">
+        <heading-tag class="has-text-gray-mid" :level="3">Call Recording Page:</heading-tag>
+        <paragraph-tag>This page gives visibility into the file’s reconciliation process allowing the user to view and correct any issues.</paragraph-tag>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['reconciliationFail']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['reconciliationSuccess']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
       </div>
       <div class="mt-4">
-        <h3 class="has-text-primary is-size-2 mb-1">Table Views</h3>
-        <p class="is-family-sans-serif p-content mb-1">Many pages in Fusion organize data into tables.</p>
-        <ImageComponent :directory="specimen.slug" :image="specimen.images['analyticsSourcePage']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
-      </div>
-      <div class="mt-4">
-        <h3 class="has-text-primary is-size-2 mb-1">User Auth Pages</h3>
-        <p class="is-family-sans-serif p-content mb-1">These pages were designed to add character to the experience.</p>
+        <heading-tag class="has-text-gray-mid" :level="3">Auth Pages</heading-tag>
+        <paragraph-tag>Designed to add character to the experience.</paragraph-tag>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['login']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['logout']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
         <ImageComponent :directory="specimen.slug" :image="specimen.images['resetPassword']" class="is-full-width mt-3 border-radius--3 box-shadow--gray"></ImageComponent>
