@@ -14,34 +14,25 @@
         <list-item>TailwindCss</list-item>
         <list-item>Vee-Validate</list-item>
       </ul>
-      <figure class="image is-128x128">
-        <img src="https://bulma.io/images/placeholders/128x128.png">
-      </figure>
+      <ImageComponent :directory="specimen.slug" :image="specimen.images['leadData']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
       <heading-tag class="has-text-gray-mid" :level="3">What I Did:</heading-tag>
       <paragraph-tag>I hired, trained, and led the frontend team (2 reports) as we built Kiyote from the ground up. I would prepare feature briefs which often included a mockup or prototype and assign them to the team. We would talk through methods of implementation in whatever depth was necessary.</paragraph-tag>
       <paragraph-tag>My role didn’t preclude me from working in the trenches, I worked alongside my reports, each of us responsible for building our own features.</paragraph-tag>
 
-      <figure class="image is-128x128">
-        <img src="https://bulma.io/images/placeholders/128x128.png">
-      </figure>
+      <ImageComponent :directory="specimen.slug" :image="specimen.images['reasonMapping']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
       <paragraph-tag>In addition to leading the planning and development of features I was responsible for Kiyote’s UI design.</paragraph-tag>
       <paragraph-tag>To achieve a cohesive look and feel I created the base reusable base components like buttons, tables, pagination, tabs, panels, tooltips, form fields, and modals utilizing the Tailwind CSS framework.</paragraph-tag>
+<!--      <heading-tag class="has-text-gray-mid" :level="3">The Branding:</heading-tag>-->
+<!--      <paragraph-tag>The logo and visual identity was also my responsibility. A variety of discussions and design critiques brought me to this solution for the logo.</paragraph-tag>-->
 
-      <figure class="image is-128x128">
-        <img src="https://bulma.io/images/placeholders/128x128.png">
-      </figure>
+<!--      <figure class="image is-128x128">-->
+<!--        <img src="https://bulma.io/images/placeholders/128x128.png">-->
+<!--      </figure>-->
 
-      <heading-tag class="has-text-gray-mid" :level="3">The Branding:</heading-tag>
-      <paragraph-tag>The logo and visual identity was also my responsibility. A variety of discussions and design critiques brought me to this solution for the logo.</paragraph-tag>
-
-      <figure class="image is-128x128">
-        <img src="https://bulma.io/images/placeholders/128x128.png">
-      </figure>
-
-      <paragraph-tag>It also looks quite snazzy in holofoil.</paragraph-tag>
-      <figure class="image is-128x128">
-        <img src="https://bulma.io/images/placeholders/128x128.png">
-      </figure>
+<!--      <paragraph-tag>It also looks quite snazzy in holofoil.</paragraph-tag>-->
+<!--      <figure class="image is-128x128">-->
+<!--        <img src="https://bulma.io/images/placeholders/128x128.png">-->
+<!--      </figure>-->
 
       <article-linkouts/>
     </article>
@@ -50,7 +41,7 @@
 
 <script>
   import SpecimenHeading from "../components/SpecimenHeading";
-  // import ImageComponent from "../components/ImageComponent";
+  import ImageComponent from "../components/ImageComponent";
   import fetchSpecimen from '../mixins/fetchSpecimen.js';
 
   export default {
@@ -59,7 +50,7 @@
     mixins: [fetchSpecimen],
     components: {
       SpecimenHeading,
-      // ImageComponent
+      ImageComponent
     },
   }
 </script>

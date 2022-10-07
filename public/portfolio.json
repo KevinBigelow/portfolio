@@ -8,7 +8,12 @@
     },
     "categories": [
       "Frontend", "UI Design", "Team Leadership"
-    ]
+    ],
+    "images": {
+      "leadData": {"name":  "leadData", "sizes": [1703], "extension": ".png", "alt": ""},
+      "fieldManagement": {"name":  "fieldManagement", "sizes": [1705], "extension": ".png", "alt": ""},
+      "reasonMapping": {"name":  "reasonMapping", "sizes": [1000], "extension": ".png", "alt": ""}
+    }
   },
   "CallCenterPortal": {
     "slug": "CallCenterPortal",

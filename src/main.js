@@ -31,9 +31,7 @@ Vue.component('heading-tag', HeadingTag)
 Vue.component('paragraph-tag', ParagraphTag)
 Vue.component('list-item', ListItem)
 
-Vue.use(VueLazyload, {
-  loading: '/images/loading.gif',
-})
+Vue.use(VueLazyload)
 
 Vue.config.productionTip = false
 
