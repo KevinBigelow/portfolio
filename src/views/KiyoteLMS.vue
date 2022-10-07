@@ -22,18 +22,6 @@
       <ImageComponent :directory="specimen.slug" :image="specimen.images['reasonMapping']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
       <paragraph-tag>In addition to leading the planning and development of features I was responsible for Kiyote’s UI design.</paragraph-tag>
       <paragraph-tag>To achieve a cohesive look and feel I created the base reusable base components like buttons, tables, pagination, tabs, panels, tooltips, form fields, and modals utilizing the Tailwind CSS framework.</paragraph-tag>
-<!--      <heading-tag class="has-text-gray-mid" :level="3">The Branding:</heading-tag>-->
-<!--      <paragraph-tag>The logo and visual identity was also my responsibility. A variety of discussions and design critiques brought me to this solution for the logo.</paragraph-tag>-->
-
-<!--      <figure class="image is-128x128">-->
-<!--        <img src="https://bulma.io/images/placeholders/128x128.png">-->
-<!--      </figure>-->
-
-<!--      <paragraph-tag>It also looks quite snazzy in holofoil.</paragraph-tag>-->
-<!--      <figure class="image is-128x128">-->
-<!--        <img src="https://bulma.io/images/placeholders/128x128.png">-->
-<!--      </figure>-->
-
       <article-linkouts/>
     </article>
   </div>
