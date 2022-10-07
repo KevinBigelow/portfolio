@@ -22,9 +22,9 @@
     ],
     "images": {
       "current": {"name":  "current", "sizes": [391, 782], "extension": ".png", "alt": ""},
-      "emptyState": {"name":  "emptyState", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": ""},
+      "emptyState": {"name":  "emptyState", "sizes": [600, 1234, 2468], "extension": ".png", "alt": ""},
       "feedback": {"name":  "feedback", "sizes": [453, 906], "extension": ".png", "alt": ""},
-      "results": {"name":  "results", "sizes": [600, 1234, 2468], "extension": ".jpg", "alt": ""},
+      "results": {"name":  "results", "sizes": [600, 1234, 2468], "extension": ".png", "alt": ""},
       "toggle": {"name":  "toggle", "sizes": [382, 764], "extension": ".png", "alt": ""}
     }
   },

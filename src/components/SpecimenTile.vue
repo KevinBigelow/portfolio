@@ -23,6 +23,16 @@
 </script>
 
 <style lang="scss">
+  .specimen-tile-container {
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 1rem;
+    padding: 1rem;
+    @media screen and (min-width: 600px) {
+      border: none;
+      padding: 0;
+      border-radius: 0;
+    }
+  }
   .specimen-link {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -34,9 +44,22 @@
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    @media screen and (min-width: 500px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 600px) {
+      width: 500px;
+    }
 
     @media screen and (min-width: 1660px) {
       height: 400px;
+      width: auto;
+      margin: 0;
     }
 
     @media screen and (min-width: $desktop) {

@@ -2,7 +2,8 @@
   <div class="specimen-view-content view-content">
     <article v-if="specimen">
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
-      <paragraph-tag>Designed to be brought with our sales team when pitching our web design services to local businesses.</paragraph-tag>
+      <paragraph-tag>Organizing information into a compelling layout is something I really enjoy. It's a skill that crosses over between web and print design.</paragraph-tag>
+      <paragraph-tag>This pamphlet was designed to be brought with our sales team when pitching our web design services to local businesses.</paragraph-tag>
       <paragraph-tag>The goal was to help the potential client visualize the possibilities, convey our expertise, and provide them with relevant statistics.</paragraph-tag>
       <paragraph-tag>The target audience was local businesses who had no website, an outdated website, and/or a weak web presence.</paragraph-tag>
       <div class="mt-5 mb-3">
