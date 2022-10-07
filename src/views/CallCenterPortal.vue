@@ -28,7 +28,7 @@
           <paragraph-tag>If offers have more than one program option in its form, agents could quickly preview the options with this UI affordance.</paragraph-tag>
         </div>
         <div class="ph-1">
-          <ImageComponent :directory="specimen.slug" :image="specimen.images['toggle']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
+          <ImageComponent :directory="specimen.slug" :image="specimen.images['toggle']" constrained="0" class="is-margin-centered is-block is-full-width-mobile"></ImageComponent>
         </div>
       </div>
       <div class="mt-4 flex blurb-with-image">
@@ -37,7 +37,7 @@
           <paragraph-tag>Allowing the agent to see offer submission statuses helps them determine whether to make any corrections on a submission, or pursue another offer that matches their client’s needs.</paragraph-tag>
         </div>
         <div class="ph-1">
-          <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" constrained="0" class="is-margin-centered is-block"></ImageComponent>
+          <ImageComponent :directory="specimen.slug" :image="specimen.images['feedback']" constrained="0" class="is-margin-centered is-block is-full-width-mobile"></ImageComponent>
         </div>
       </div>
       <article-linkouts/>
