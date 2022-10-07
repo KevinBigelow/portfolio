@@ -11,6 +11,7 @@ $primary: #6475F8;
 $grey-lighter: #E6E6E6;
 $grey-lightest: #EFEFEF;
 $white-ter: #F7F7F7;
+$gray-mid: #ebebeb;
 $gray-mineshaft: #333333;
 $black-light: #1b1d24;
 $black: #060610;
@@ -18,7 +19,7 @@ $black: #060610;
 $primary-gradient-1: #6675F8;
 $primary-gradient-2: #9271FF;
 
-$primary-shadow: rgba(115, 83, 236, .55);
+$primary-shadow: rgba(100, 117, 248, .20);
 
 $layered-button-default-1: #5f5f5f;
 $layered-button-default-2: $gray-mineshaft;
@@ -37,4 +38,4 @@ $body-background-color: $black;
 ---------------------------------------------------- */
 $specimen-tile-border-radius: $border-radius-20;
 $specimen-tile-outline-border-radius: $border-radius-20;
-$specimen-tile-shadow-color: rgba(115, 83, 236, .15);
+$specimen-tile-shadow-color: rgba(100, 117, 248, .4);

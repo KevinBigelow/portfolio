@@ -1,5 +1,5 @@
 <template>
-    <KinesisContainer class="app-navbar app-navbar-grid" tag="nav" type="depth">
+    <KinesisContainer class="app-navbar app-navbar-grid" tag="nav">
         <h2 class="app-navbar--subtitle has-text-primary grid-title">UI Engineer</h2>
         <h1 class="app-navbar--title title has-text-white grid-name is-marginless"><router-link :to="{name: 'home'}" class="has-text-white">Kevin Bigelow</router-link></h1>
         <div class="grid-actions">

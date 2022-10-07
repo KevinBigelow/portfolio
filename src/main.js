@@ -11,6 +11,9 @@ import { faArrowLeft, faExternalLink } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faMedium, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import ArticleLinkouts from './components/ArticleLinkouts'
+import HeadingTag from "./components/HeadingTag";
+import ParagraphTag from "./components/ParagraphTag";
+import ListItem from "./components/ListItem"
 
 library.add(
     faArrowLeft,
@@ -24,10 +27,11 @@ library.add(
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('article-linkouts', ArticleLinkouts)
+Vue.component('heading-tag', HeadingTag)
+Vue.component('paragraph-tag', ParagraphTag)
+Vue.component('list-item', ListItem)
 
-Vue.use(VueLazyload, {
-  loading: '/images/loading.gif',
-})
+Vue.use(VueLazyload)
 
 Vue.config.productionTip = false
 
