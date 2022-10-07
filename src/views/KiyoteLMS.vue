@@ -18,7 +18,7 @@
         <img src="https://bulma.io/images/placeholders/128x128.png">
       </figure>
       <heading-tag class="has-text-gray-mid" :level="3">What I Did:</heading-tag>
-      <paragraph-tag>I hired, trained, and led the frontend team (2 reports) as we built Kiyote from the ground up. For each feature that I assigned I would prepare a brief which often included a mockup or prototype, we would talk through methods of implementation in whatever depth was necessary.</paragraph-tag>
+      <paragraph-tag>I hired, trained, and led the frontend team (2 reports) as we built Kiyote from the ground up. I would prepare feature briefs which often included a mockup or prototype and assign them to the team. We would talk through methods of implementation in whatever depth was necessary.</paragraph-tag>
       <paragraph-tag>My role didn’t preclude me from working in the trenches, I worked alongside my reports, each of us responsible for building our own features.</paragraph-tag>
 
       <figure class="image is-128x128">
