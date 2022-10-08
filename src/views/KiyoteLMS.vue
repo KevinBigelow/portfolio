@@ -4,7 +4,7 @@
       <SpecimenHeading :specimen="specimen"></SpecimenHeading>
       <heading-tag class="has-text-gray-mid" :level="3">What is Kiyote:</heading-tag>
       <paragraph-tag>Kiyote is a Lead Management SaaS product designed to scale across any vertical.</paragraph-tag>
-      <paragraph-tag>Companies who use Kiyote are able to build out offers with a robust set of properties. Those properties determine which offers our system will return from Kiyote’s search API.</paragraph-tag>
+      <paragraph-tag>Companies who use Kiyote are able to build out offers with a robust set of properties. Those properties determine which offers return from Kiyote’s search API.</paragraph-tag>
       <paragraph-tag>The system has high coverage for testing a lead's likelihood of selling, and provides visibility into each stage a lead passes through during its lifecycle.</paragraph-tag>
       <heading-tag class="has-text-gray-mid" :level="3">Tools:</heading-tag>
       <ul>
@@ -20,7 +20,7 @@
       <paragraph-tag>My role didn’t preclude me from working in the trenches, I worked alongside my reports, each of us responsible for building our own features.</paragraph-tag>
 
       <ImageComponent :directory="specimen.slug" :image="specimen.images['reasonMapping']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
-      <paragraph-tag>In addition to leading the planning and development of features I was responsible for Kiyote’s UI design.</paragraph-tag>
+      <paragraph-tag>In addition to leading the planning and development of features I was responsible for Kiyote’s UI design system.</paragraph-tag>
       <paragraph-tag>To achieve a cohesive look and feel I created the base reusable base components like buttons, tables, pagination, tabs, panels, tooltips, form fields, and modals utilizing the Tailwind CSS framework.</paragraph-tag>
       <article-linkouts/>
     </article>
