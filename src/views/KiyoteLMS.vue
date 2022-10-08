@@ -21,7 +21,7 @@
 
       <ImageComponent :directory="specimen.slug" :image="specimen.images['reasonMapping']" class="is-full-width border-radius--3 mt-2"></ImageComponent>
       <paragraph-tag>In addition to leading the planning and development of features I was responsible for Kiyote’s UI design system.</paragraph-tag>
-      <paragraph-tag>To achieve a cohesive look and feel I created the base reusable base components like buttons, tables, pagination, tabs, panels, tooltips, form fields, and modals utilizing the Tailwind CSS framework.</paragraph-tag>
+      <paragraph-tag>To achieve a cohesive look and feel I created reusable base components like buttons, tables, pagination, tabs, panels, tooltips, form fields, and modals utilizing the Tailwind CSS framework.</paragraph-tag>
       <article-linkouts/>
     </article>
   </div>
